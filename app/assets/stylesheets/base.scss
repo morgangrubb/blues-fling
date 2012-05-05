@@ -1,0 +1,85 @@
+@import "compass";
+
+
+
+// =================
+// = Our variables =
+// =================
+
+  $bluesflingBackground: #464255;
+  $bluesflingFontColour: #BDBDBD;
+  $bluesflingHighlightColour: #FF6;
+  $bluesflingContentBoxColour: #2A3864;
+
+  @import url(http://fonts.googleapis.com/css?family=Mako|Lato|Antic|Oxygen|Actor);
+
+  $fontMako: 'Mako', sans-serif;
+  $fontLato: 'Lato', sans-serif;
+  //$fontAntic: 'Antic', sans-serif;
+  $fontOxygen: 'Oxygen', sans-serif;
+  $fontActor: 'Actor', sans-serif;
+
+  $headerFont: $fontActor;
+  $bodyFont: $fontMako;
+
+
+
+// ==================================
+// = Overriding Bootstrap variables =
+// ==================================
+
+  $baseFontFamily: $fontMako;
+  $baseFontSize: 14px;
+
+
+
+// ====================
+// = Import Bootstrap =
+// ====================
+
+  // temporary fix for compass_twitter_bootstrap
+  @function e($raw-css) {
+    @return #{$raw-css}
+  }
+
+  @import "compass_twitter_bootstrap";
+  @import "compass_twitter_bootstrap_responsive";
+
+
+
+// ===============
+// = Body styles =
+// ===============
+
+  body {
+    background: $bluesflingBackground asset-data-url('100-90-5.png') repeat;
+  }
+
+
+
+// ========================
+// = Inner content blocks =
+// ========================
+
+  .content > .inner {
+//    @include border-radius(10px);
+    @include box-shadow(0 0 5px darken($bluesflingBackground, 10%));
+    padding: 10px 20px;
+    background-color: $bluesflingContentBoxColour;
+    color: $bluesflingFontColour;
+    margin-bottom: $gridGutterWidth;
+
+    h2, h3, h4, h5, h6 {
+      color: $bluesflingHighlightColour;
+    }
+
+    h2, h3 {
+      font-family: $headerFont;
+    }
+
+//    h2 {
+//      $shadow: 0 -1px 0 rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.4);
+//      @include text-shadow($shadow);
+////      @include text-shadow(0 -1px 1px rgba(darken($bluesflingContentBoxColour, 20%), 0.5));
+//    }
+  }
