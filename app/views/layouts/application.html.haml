@@ -6,6 +6,45 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .container
-      .content
-        = yield
+    %header
+      - if current_menu_node == menu_root.children.first
+        %h1 TODO: Graphics go here. Preferrably piecemeal so that the VERY WIDE logo slides over the background image.
+      - else
+        %h1 TODO: Small graphic
+      
+      .shade
+        .container
+          %h2
+            With
+            %b Lucky Skillen
+            &mdash;
+            June 15-17, Vancouver BC
+
+          %ul
+            - menu_root.children.each do |menu_node|
+              %li{ class: "#{'active' if menu_node == current_menu_node }" }
+                = link_to menu_node.name, menu_node.url
+
+    = render 'layouts/facebook_sdk'
+    .shade
+      .container
+        .content
+          = yield
+
+    %footer
+      .shade
+        .container
+          .row
+            .span6
+              %h4 About us
+              %p Blues Fling is brought to you by Karen Jang, Devon Cooke and Martin Knowles.
+              %p They are being aided by a small army of volunteers including Abigail Feresten, Barney Lee, Chris Harris, Diane Garceau, Ioana Bercea, Julia Skoczylas, Liam Helmer, Maxim Stykow, Morgan Grubb, Oana Sandu and Valerie Stride.
+            .span6
+              %h4 Contact
+              %p
+                You can find us on Facebook at
+                = link_to "Blues Fling", 'https://www.facebook.com/BluesFling', target: '_blank'
+                or email us at 
+                = succeed '.' do
+                  = mail_to "info@bluesfling.ca"
+              -# .fb-comments{ "data-href" => "http://www.bluesfling.ca", "data-num-posts" => "3", "data-width" => "400", "data-colorscheme" => "dark" }

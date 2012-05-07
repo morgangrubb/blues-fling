@@ -11,16 +11,30 @@
   $bluesflingHighlightColour: #FF6;
   $bluesflingContentBoxColour: #2A3864;
 
-  @import url(http://fonts.googleapis.com/css?family=Mako|Lato|Antic|Oxygen|Actor);
+  //@import url(http://fonts.googleapis.com/css?family=Mako|Lato|Oxygen|Actor);
+  @import url(http://fonts.googleapis.com/css?family=Mako|Actor);
 
   $fontMako: 'Mako', sans-serif;
-  $fontLato: 'Lato', sans-serif;
-  //$fontAntic: 'Antic', sans-serif;
-  $fontOxygen: 'Oxygen', sans-serif;
+//  $fontLato: 'Lato', sans-serif;
+//  $fontOxygen: 'Oxygen', sans-serif;
   $fontActor: 'Actor', sans-serif;
 
   $headerFont: $fontActor;
   $bodyFont: $fontMako;
+
+  @mixin backgroundFlare($backgroundColour, $flareColour, $flarePosition: top) {
+    // This is what I want to do here but it doesn't work.
+    // @include background($wishpondHeaderBackground,
+    //   linear-gradient(left, rgba($wishpondHeaderFlare, 0) 0%, rgba($wishpondHeaderFlare, 1) 50%, rgba($wishpondHeaderFlare, 0) 100%),
+    //   radial-gradient(top center, rgba($wishpondHeaderFlare, 1), rgba($wishpondHeaderFlare, 0)),
+    //   image-url("http://devcorp.wishpond.com/images/noise.png")
+    // );
+
+    background-color: $backgroundColour;
+    @include background-image(linear-gradient(left, rgba($flareColour, 0) 0%, rgba($flareColour, 1) 50%, rgba($flareColour, 0) 100%));
+    @include background-image(radial-gradient($flarePosition center, rgba($flareColour, 1), rgba($flareColour, 0)));
+    // TODO: Add the noise image
+  }
 
 
 
@@ -51,35 +65,106 @@
 // = Body styles =
 // ===============
 
-  body {
-    background: $bluesflingBackground asset-data-url('100-90-5.png') repeat;
+  h1, h2, h3 {
+    font-family: $headerFont;
+  }
+
+  body > .shade {
+    min-height: 400px;
+    padding-top: $gridGutterWidth;
+    background: asset-data-url('big_shadow.png') repeat-x left top;
+
+    .content {
+      h1, h2, h3 {
+        color: $bluesflingBackground;
+      }
+
+      h1 {
+        margin-bottom: $gridGutterWidth / 2;
+      }
+
+      .inner {
+        margin-bottom: $gridGutterWidth;
+      }
+    }
   }
 
 
 
-// ========================
-// = Inner content blocks =
-// ========================
+// =======
+// = Nav =
+// =======
 
-  .content > .inner {
-//    @include border-radius(10px);
-    @include box-shadow(0 0 5px darken($bluesflingBackground, 10%));
-    padding: 10px 20px;
-    background-color: $bluesflingContentBoxColour;
-    color: $bluesflingFontColour;
-    margin-bottom: $gridGutterWidth;
+  header {
+    
+    background-color: $bluesflingBackground;
+//    background: $bluesflingBackground asset-data-url('100-90-5.png') repeat;
 
-    h2, h3, h4, h5, h6 {
+    &> .shade {
+      @include backgroundFlare($bluesflingBackground, lighten($bluesflingBackground, 15%), bottom);
+    }
+
+    h2 {
+      text-align: center;
+      color: white;
+    }
+
+    ul {
+      text-align: center;
+      margin: 0;
+      list-style: none;
+      li {
+        display: inline-block;
+//        width: 80px;
+        text-align: center;
+        a {
+          font-family: $headerFont;
+          display: block;
+          padding: 10px;
+          color: white;
+          font-size: 16px;
+          line-height: 20px;
+          &:hover {
+            color: lighten($bluesflingHighlightColour, 10%);
+            text-decoration: none;
+          }
+        }
+
+        &.active {
+          a, a:hover {
+            color: $bluesflingHighlightColour;
+          }
+        }
+      }
+    }
+  }
+
+
+// ==========
+// = Footer =
+// ==========
+
+  footer {
+    @include backgroundFlare($bluesflingContentBoxColour, lighten($bluesflingContentBoxColour, 15%), top);
+    
+    &> .shade {
+      padding: $gridGutterWidth 0 100px 0;
+      background: asset-data-url('big_shadow.png') repeat-x left top;
+    }
+
+    h4 {
+      font-size: 120%;
+      line-height: 100%;
+      color: $bluesflingHighlightColour;
+      margin-bottom: 10px;
+    }
+
+    color: white;
+
+    a {
+      text-decoration: underline;
+    }
+    a:hover {
       color: $bluesflingHighlightColour;
     }
-
-    h2, h3 {
-      font-family: $headerFont;
-    }
-
-//    h2 {
-//      $shadow: 0 -1px 0 rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.4);
-//      @include text-shadow($shadow);
-////      @include text-shadow(0 -1px 1px rgba(darken($bluesflingContentBoxColour, 20%), 0.5));
-//    }
   }

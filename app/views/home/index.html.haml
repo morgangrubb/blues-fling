@@ -1,17 +1,37 @@
-%h1
-  Everyone loves a Summer
-  %i Blues
-  Fling!
-
-%h2
-  June 15-17, Vancouver BC. 
-
 .inner
-  %h2 Is Blues Fling for me?
-  %p Find me in app/views/home/index.html.haml
-  %h2 Wiggle
-  %p Yay
+  %h1 Everyone loves to Get Lucky!
+  %p TODO: General introductory text describing the event.
+  %p TODO: Put a couple of blues dancing images from the community in here.
 
-.inner
-  %h2 How about another?
-  %p Yay!
+.row
+  .span7
+    .inner
+      %h2 Is Blues Fling for me?
+      %p The classes at Blues Fling are "all levels" but are best if you have some prior dance experience. While Summer Blues Fling will have a strong blues focus, those with West Coast Swing, Salsa, Argentine Tango, or Lindy Hop experience are also very much welcome.
+      %p If you're confused about the whole "am I dancing blues? or is this fusion? or what?" set of questions, welcome home &mdash; we'll be dedicating some class time to help you answer these very questions, as well as providing opportunities for dancing both styles at our evening dances.
+      %p
+        If you're new to blues dancing, check out 
+        = succeed ',' do
+          = link_to "Blues in the City", "https://www.facebook.com/groups/Bluesinthecity/", target: '_blank'
+        = link_to "Blues Cafe", "https://www.facebook.com/TheBluesCafe", target: '_blank'
+        and
+        = link_to "Fuse", "https://www.facebook.com/pages/FUSE-Dance/193221077396143", target: '_blank'
+        to get your bearings; you'll find a lot of great ideas and techniques at Summer Blues Fling to try. We'll also have a beginner class as part of our Friday night dance to get things cookin'.
+      %p If you've been dancing awhile and have been to the previous Blues Flings, you'll be able to extend what you've learned previously in both a workshop and social environment and gain deeper and broader knowledge.
+
+    .inner
+      %h2 Private lessons
+      %p
+        Looking to improve your Blues dancing with a little more specific feedback?
+        = link_to "Book a private lesson with Lucky Skillen", '/private_lessons'
+        any time over the weekend.
+
+    .inner
+      %h2 Registration
+      %p
+        = link_to "Register now!", '/registration'
+      %p TODO: How much this is going to cost for the whole weekend. Price differentials, etc.
+
+  .span5
+    .inner
+      .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-width" => "292", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true" }

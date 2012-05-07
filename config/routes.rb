@@ -1,5 +1,10 @@
 Bluesfling::Application.routes.draw do
-  get "home/index"
+
+  get 'instructors' => 'home#instructors'
+  get 'schedule' => 'home#schedule'
+  get 'private_lessons' => 'home#private_lessons'
+  get 'registration' => 'home#registration'
+  get 'contact_us' => 'home#contact_us'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
