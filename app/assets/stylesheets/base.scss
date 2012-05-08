@@ -11,6 +11,9 @@
   $bluesflingHighlightColour: #FF6;
   $bluesflingContentBoxColour: #2A3864;
 
+  $bluesflingBackgroundGreen: rgb(77, 183, 72);
+  $bluesflingBackgroundBlue: rgb(46, 46, 129);
+
   //@import url(http://fonts.googleapis.com/css?family=Mako|Lato|Oxygen|Actor);
   @import url(http://fonts.googleapis.com/css?family=Mako|Actor);
 
@@ -22,7 +25,7 @@
   $headerFont: $fontActor;
   $bodyFont: $fontMako;
 
-  @mixin backgroundFlare($backgroundColour, $flareColour, $flarePosition: top) {
+  @mixin backgroundFlare($backgroundColour, $flareColour, $flarePosition: top center) {
     // This is what I want to do here but it doesn't work.
     // @include background($wishpondHeaderBackground,
     //   linear-gradient(left, rgba($wishpondHeaderFlare, 0) 0%, rgba($wishpondHeaderFlare, 1) 50%, rgba($wishpondHeaderFlare, 0) 100%),
@@ -32,7 +35,7 @@
 
     background-color: $backgroundColour;
     @include background-image(linear-gradient(left, rgba($flareColour, 0) 0%, rgba($flareColour, 1) 50%, rgba($flareColour, 0) 100%));
-    @include background-image(radial-gradient($flarePosition center, rgba($flareColour, 1), rgba($flareColour, 0)));
+    @include background-image(radial-gradient($flarePosition, rgba($flareColour, 1), rgba($flareColour, 0)));
     // TODO: Add the noise image
   }
 
@@ -76,7 +79,7 @@
 
     .content {
       h1, h2, h3 {
-        color: $bluesflingBackground;
+        color: $bluesflingBackgroundBlue;
       }
 
       h1 {
@@ -96,17 +99,41 @@
 // =======
 
   header {
-    
-    background-color: $bluesflingBackground;
-//    background: $bluesflingBackground asset-data-url('100-90-5.png') repeat;
+    position: relative;
+    padding-top: 20px;
+    background-color: $bluesflingBackgroundBlue;
+    @include background-image(radial-gradient(bottom center, $bluesflingBackgroundGreen, $bluesflingBackgroundBlue));
 
-    &> .shade {
-      @include backgroundFlare($bluesflingBackground, lighten($bluesflingBackground, 15%), bottom);
+    .dancers {
+      height: 318px;
+      background: asset-url('bf3-web.png', image) no-repeat left top;
+      padding-left: 260px;
     }
 
     h2 {
-      text-align: center;
+      padding-top: 80px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      display: inline-block;
       color: white;
+      padding: 20px;
+      background: rgba(#000, 0.7);
+      margin: 0;
+      @include border-radius(10px);
+    }
+
+    &> .shade {
+      @include backgroundFlare($bluesflingBackground, lighten($bluesflingBackground, 15%), bottom center);
+    }
+
+    .menu {
+      width: 100%;
+      position: absolute;
+      height: 38px;
+      bottom: 0;
+      background-color: rgba(#000, 0.7);
     }
 
     ul {

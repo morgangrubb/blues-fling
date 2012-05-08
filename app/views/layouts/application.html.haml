@@ -1,25 +1,25 @@
 !!!
 %html
   %head
-    %title Summer Blues Fling II
+    %title Blues Fling III: Get Lucky
     = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
     %header
-      - if current_menu_node == menu_root.children.first
-        %h1 TODO: Graphics go here. Preferrably piecemeal so that the VERY WIDE logo slides over the background image.
-      - else
-        %h1 TODO: Small graphic
-      
-      .shade
-        .container
+      .container
+        .dancers
           %h2
+            Blues Fling III: Get Lucky
+
+          %h3
             With
             %b Lucky Skillen
             &mdash;
             June 15-17, Vancouver BC
 
+      .menu
+        .container
           %ul
             - menu_root.children.each do |menu_node|
               %li{ class: "#{'active' if menu_node == current_menu_node }" }
