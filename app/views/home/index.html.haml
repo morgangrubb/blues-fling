@@ -42,16 +42,17 @@
               = image_tag "lucky/1.jpg", title: "Lucky Skillen"
               .carousel-caption
                 %p Lucky Skillen
-            .item
-              = image_tag "lucky/2.jpg", title: "Lucky Skillen"
-              .carousel-caption
-                %p Lucky Skillen
-            .item
-              = image_tag "lucky/3.jpg", title: "Lucky Skillen"
-              .carousel-caption
-                %p Lucky Skillen
+            -#
+              .item
+                = image_tag "lucky/2.jpg", title: "Lucky Skillen"
+                .carousel-caption
+                  %p Lucky Skillen
+              .item
+                = image_tag "lucky/3.jpg", title: "Lucky Skillen"
+                .carousel-caption
+                  %p Lucky Skillen
     
-    - content_for :javascript do
+    -# content_for :javascript do
       = javascript_include_tag 'bootstrap-carousel.js'
       :javascript
         $('.carousel').carousel();
