@@ -6,23 +6,24 @@
     = csrf_meta_tags
   %body
     %header
-      .container
-        .dancers
-          %h2
-            Blues Fling III: Get Lucky
-
-          %h3
-            With
-            %b Lucky Skillen
-            &mdash;
-            June 15-17, Vancouver BC
-
-      .menu
+      .noise
         .container
-          %ul
-            - menu_root.children.each do |menu_node|
-              %li{ class: "#{'active' if menu_node == current_menu_node }" }
-                = link_to menu_node.name, menu_node.url
+          .dancers
+            %h2
+              Blues Fling III: Get Lucky
+
+            %h3
+              With
+              %b Lucky Skillen
+              &mdash;
+              June 15-17, Vancouver BC
+
+        .menu
+          .container
+            %ul
+              - menu_root.children.each do |menu_node|
+                %li{ class: "#{'active' if menu_node == current_menu_node }" }
+                  = link_to menu_node.name, menu_node.url
 
     = render 'layouts/facebook_sdk'
     .shade

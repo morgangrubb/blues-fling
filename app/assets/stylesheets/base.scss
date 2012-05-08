@@ -100,11 +100,15 @@
 
   header {
     position: relative;
-    padding-top: 20px;
     background-color: $bluesflingBackgroundBlue;
     @include background-image(radial-gradient(bottom center, $bluesflingBackgroundGreen, $bluesflingBackgroundBlue));
 
+    .noise {
+      background: asset-url('noise.png', image) repeat left top;
+    }
+
     .dancers {
+      margin-top: 20px;
       height: 318px;
       background: asset-url('bf3-web.png', image) no-repeat left top;
       padding-left: 260px;
