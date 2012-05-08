@@ -1,10 +1,11 @@
-.inner
-  %h1 Everyone loves to Get Lucky!
-  %p TODO: General introductory text describing the event.
-  %p TODO: Put a couple of blues dancing images from the community in here.
-
 .row
   .span7
+    .inner
+      %h1 Everyone loves to Get Lucky!
+      %p TODO: General introductory text describing the event.
+      %p TODO: Put a couple of blues dancing images from the community in here.
+      %p Bah
+
     .inner
       %h2 Is Blues Fling for me?
       %p The classes at Blues Fling are "all levels" but are best if you have some prior dance experience. While Summer Blues Fling will have a strong blues focus, those with West Coast Swing, Salsa, Argentine Tango, or Lindy Hop experience are also very much welcome.
@@ -33,5 +34,26 @@
       %p TODO: How much this is going to cost for the whole weekend. Price differentials, etc.
 
   .span5
-    .inner
+    .row
+      .span4.pull-right
+        .carousel
+          .carousel-inner
+            .active.item
+              = image_tag "lucky/1.jpg", title: "Lucky Skillen"
+              .carousel-caption
+                %p Lucky Skillen
+            .item
+              = image_tag "lucky/2.jpg", title: "Lucky Skillen"
+              .carousel-caption
+                %p Lucky Skillen
+            .item
+              = image_tag "lucky/3.jpg", title: "Lucky Skillen"
+              .carousel-caption
+                %p Lucky Skillen
+    
+    - content_for :javascript do
+      :javascript
+        $('.carousel').carousel();
+    
+    .inner.pull-right
       .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-width" => "292", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true" }

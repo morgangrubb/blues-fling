@@ -3,7 +3,6 @@
   %head
     %title Blues Fling III: Get Lucky
     = stylesheet_link_tag    "application", media: "all"
-    = javascript_include_tag "application"
     = csrf_meta_tags
   %body
     %header
@@ -48,3 +47,6 @@
                 = succeed '.' do
                   = mail_to "info@bluesfling.ca"
               -# .fb-comments{ "data-href" => "http://www.bluesfling.ca", "data-num-posts" => "3", "data-width" => "400", "data-colorscheme" => "dark" }
+
+    = javascript_include_tag "application"
+    = yield :javascript
