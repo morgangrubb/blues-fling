@@ -95,6 +95,11 @@
     // Make it big and pretty
   }
 
+  #bookagain {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   #returntobooking,  {
     @extend .alert;
     @extend .alert-success;
