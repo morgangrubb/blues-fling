@@ -103,6 +103,8 @@
     background-color: $bluesflingBackgroundBlue;
     @include background-image(radial-gradient(bottom center, $bluesflingBackgroundGreen, $bluesflingBackgroundBlue));
 
+    $headerPush: 220px;
+
     .noise {
       background: asset-url('noise.png', image) repeat left top;
     }
@@ -111,15 +113,26 @@
       margin-top: 20px;
       height: 318px;
       background: asset-url('bf3-web.png', image) no-repeat left top;
-      padding-left: 260px;
+      position: relative;
     }
 
     h2 {
-      padding-top: 80px;
-      margin-bottom: 20px;
+      z-index: 10;
+      position: absolute;
+      left: $headerPush;
+      top: -10px;
+      height: 210px;
+      width: 523px;
+      display: block;
+      text-indent: -9999px;
+      background: asset-url('blues-fling-3.png', image) no-repeat left top;
     }
 
     h3 {
+      position: absolute;
+      left: $headerPush + 40px;
+      top: 190px;
+      z-index: 5;
       display: inline-block;
       color: white;
       padding: 20px;
@@ -197,5 +210,67 @@
     }
     a:hover {
       color: $bluesflingHighlightColour;
+    }
+  }
+
+
+
+// =======================
+// = Page specific stuff =
+// =======================
+
+  .home-container {
+    @include clearfix();
+
+    &> .content {
+      float: left;
+      width: 620px;
+      margin-right: $gridGutterWidth;
+      margin-bottom: $gridGutterWidth;
+    }
+    &> .sidebar {
+      float: left;
+      width: 292px;
+      margin-bottom: $gridGutterWidth;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .home-container {
+      &> .content {
+        float: none;
+        width: auto;
+        margin-right: 0;
+      }
+      &> .sidebar {
+        float: none;
+        width: auto;
+        @include clearfix();
+
+        .carousel {
+          width: 292px;
+          float: left;
+          margin-right: $gridGutterWidth;
+        }
+        .facebook {
+          float: left;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 979px) {
+    .home-container {
+      &> .content {
+        width: 410px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .home-container {
+      &> .content {
+        width: 850px;
+      }
     }
   }

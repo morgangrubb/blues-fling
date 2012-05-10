@@ -89,6 +89,8 @@
     // Hide the text and use a background logo
     height: 180px;
     margin-bottom: 30px;
+    text-indent: -9999px;
+    background: asset-url('registration-banner.png', image) no-repeat left top;
   }
 
   #introduction {

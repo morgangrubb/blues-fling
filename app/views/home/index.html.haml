@@ -1,10 +1,13 @@
-.row
-  .span7
+.home-container
+  .content
     .inner
       %h1 Everyone loves to Get Lucky!
-      %p TODO: General introductory text describing the event.
-      %p TODO: Put a couple of blues dancing images from the community in here.
-      %p Bah
+      %p We're delighted to welcome Lucky Skillen back to Vancouver for a great weekend of workshops, dancing and house(-like) parties!
+      %p Lucky has been teaching since 1998 with the philosophy that play is learning and learning is fun!
+      %p
+        Learn more about Lucky
+        = succeed '.' do
+          = link_to "here", '/instructors'
 
     .inner
       %h2 Is Blues Fling for me?
@@ -30,32 +33,27 @@
     .inner
       %h2 Registration
       %p
-        = link_to "Register now!", '/registration'
-      %p TODO: How much this is going to cost for the whole weekend. Price differentials, etc.
+        There are limited spots for this event so avoid disappointment and
+        = succeed '.' do
+          = link_to "register now", '/registration'
+        Prices start from just $80 for an Early Bird Weekend Pass!
 
-  .span5
-    .row
-      .span4.pull-right
-        .carousel
-          .carousel-inner
-            .active.item
-              = image_tag "lucky/1.jpg", title: "Lucky Skillen"
-              .carousel-caption
-                %p Lucky Skillen
-            -#
-              .item
-                = image_tag "lucky/2.jpg", title: "Lucky Skillen"
-                .carousel-caption
-                  %p Lucky Skillen
-              .item
-                = image_tag "lucky/3.jpg", title: "Lucky Skillen"
-                .carousel-caption
-                  %p Lucky Skillen
-    
-    -# content_for :javascript do
-      = javascript_include_tag 'bootstrap-carousel.js'
-      :javascript
-        $('.carousel').carousel();
-    
-    .inner.pull-right
+  .sidebar
+    .carousel
+      .carousel-inner
+        .active.item
+          = image_tag "lucky/1.jpg", title: "Lucky Skillen"
+          .carousel-caption
+            %p Lucky Skillen
+        -#
+          .item
+            = image_tag "lucky/2.jpg", title: "Lucky Skillen"
+            .carousel-caption
+              %p Lucky Skillen
+          .item
+            = image_tag "lucky/3.jpg", title: "Lucky Skillen"
+            .carousel-caption
+              %p Lucky Skillen
+
+    .facebook
       .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-width" => "292", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true" }
