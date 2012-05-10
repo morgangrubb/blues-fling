@@ -183,10 +183,40 @@
     }
   }
 
-  // Weekend pass
+  // Ticket type
+  #s4131 {
+    .sectionHeaderWrapper {
+      display: none;
+    }
+  }
   #row_p18171_TicketType {
-    div, span, p {
-      font-size: 18px;
+    padding-left: 0;
+
+    .itemdescriptioncell {
+      display: none;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+
+      li:first-child {
+        margin-bottom: 5px;
+        label {
+          font-size: 18px;
+        }
+      }
+    }
+
+    input[type="radio"] {
+      position: relative;
+      top: -2px;
+    }
+
+    label {
+      padding-left: 10px;
+      line-height: 22px;
+      display: inline-block;
     }
   }
 
