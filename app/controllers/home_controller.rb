@@ -32,7 +32,7 @@ class HomeController < ApplicationController
       @menu_root ||= MenuNode.new do |root|
         root.add 'Home', url: root_path
         root.add 'Schedule', url: '/schedule'
-        root.add 'Private lessons', url: '/private_lessons'
+        # root.add 'Private lessons', url: '/private_lessons'
         root.add 'Instructors', url: '/instructors'
         root.add 'Register', url: '/registration'
       end
