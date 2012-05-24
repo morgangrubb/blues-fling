@@ -1,44 +1,65 @@
 %h1 The Blues Fling III schedule
 
 .inner
-  %h2 Friday, June 15th
-  %h3 Party
-  %p Ease yourself into the Blues Fling III weekend at our Friday night dance. This is a great opportunity to get to know everybody you'll be dancing with through the weekend and since first impressions count be sure you make a good one!
-  %table.table.table-striped
-    %tr
-      %td{ style: "width: 33%" } 10:00pm &mdash; 3:00am
-      %td Location to be announced.
+  %h2 Friday, June 15th - Hard Luck Friday
+  .row
+    .span6
+      %p It's the 1930s and the Great Depression has left everyone wanting. Wanting Blues. Pull out those tattered vintage dresses, rusty suspenders and ripped trousers. Dress for recession as we pay homage to the hard times.
+      
+      %table.table.table-striped
+        %tr
+          %td{ style: "width: 40%" } 9:00pm &mdash; 10:00pm
+          %td Drop-in lesson to get the weekend started right.
+        %tr
+          %td 10:00pm &mdash; 2:00am
+          %td Freestyle like the economy is crashing down around us.
+    = render 'venue_ache_brasil'
 
 .inner
   %h2 Saturday, June 16th
-  %h3 Workshops
-  %table.table.table-striped
-    %tr
-      %td{ style: "width: 33%" } 12:00 &mdash; 12:30
-      %td Registration and warm-up
-    %tr
-      %td{ style: "width: 33%" } 12:30 &mdash; 17:30
-      %td Four hours of workshops with details still to come.
-  %h3 Party
-  %p The perfect opportunity to practice what you've learned so far. 
-  %table.table.table-striped
-    %tr
-      %td{ style: "width: 33%" } 9:00pm &mdash; 3:00am
-      %td Location to be announced.
+  .row
+    .span6
+      %h3 Workshops
+      %table.table.table-striped
+        %tr
+          %td{ style: "width: 40%" } 12:00 &mdash; 12:30
+          %td Registration and warm-up
+        %tr
+          %td 12:30 &mdash; 17:30
+          %td Four hours of workshops with details still to come.
+    = render 'venue_russian_hall'
+  %br/
+  .row
+    .span6
+      %h3 Casino
+      %p Calling all High rollers, show girls, Black Jacks and Lady Lucks: Blues Fling is all in for Casino night. A little fast and loose but still close to the chest, Saturday promises to be glamorous, thrilling, and quite a ride. What happens at Casino night stays at Casino night. 
+      %table.table.table-striped
+        %tr
+          %td{ style: "width: 40%" } 9:00pm &mdash; 3:00am
+          %td Freestyle like you just gambled the economy of a small nation on Roulette.
+    = render 'venue_ache_brasil'
 
 .inner
   %h2 Sunday, June 17th
-  %h3 Workshops
-  %table.table.table-striped
-    %tr
-      %td{ style: "width: 33%" } 12:00 &mdash; 12:30
-      %td Registration and warm-up
-    %tr
-      %td{ style: "width: 33%" } 12:30 &mdash; 17:30
-      %td Four hours of workshops with details still to come.
-  %h3 Party
-  %p Unwind after the weekend's lessons and let the music flow through you in the final party for Blues Fling III.
-  %table.table.table-striped
-    %tr
-      %td{ style: "width: 33%" } 9:00pm &mdash; 2:00am
-      %td Location to be announced.
+  .row
+    .span6
+      %h3 Workshops
+      %table.table.table-striped
+        %tr
+          %td{ style: "width: 40%" } 12:00 &mdash; 12:30
+          %td Registration and warm-up
+        %tr
+          %td 12:30 &mdash; 17:30
+          %td Four hours of workshops with details still to come.
+    = render 'venue_russian_hall'
+  %br/
+
+  .row
+    .span6
+      %h3 Bluesalicious Superstitous
+      %p Vancouvers favorite house party venue is all about the omens on Sunday night - bring your favourite lucky charms what ever they may be. Pooled together our collective fortunes will be nothing short of spectacular. Missing this party just might mean seven years of bad luck.
+      %table.table.table-striped
+        %tr
+          %td{ style: "width: 40%" } 9:00pm &mdash; 3:00am
+          %td Freestyle like you've got all the luck in the world.
+    = render 'venue_davids_loft'
