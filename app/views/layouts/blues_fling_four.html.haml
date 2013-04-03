@@ -1,0 +1,26 @@
+!!!
+%html
+  %head
+    %title Blues Fling
+    -#
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+
+    = stylesheet_link_tag "blues_fling_four", media: "all"
+    :plain
+      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
+      <!--[if lte IE 9]><link rel="stylesheet" href="/assets/blues_fling_four/ie9.css" /><![endif]-->
+      <!--[if lte IE 8]><link rel="stylesheet" href="/assets/blues_fling_four/ie8.css" /><![endif]-->
+      <!--[if lte IE 7]><link rel="stylesheet" href="/assets/blues_fling_four/ie7.css" /><![endif]-->
+      <script src="/assets/blues_fling_four/jquery-1.8.3.min.js"></script>
+      <script src="/assets/blues_fling_four/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
+      <script src="/assets/blues_fling_four/jquery.dropotron-1.2.js"></script>
+      <script src="/assets/blues_fling_four/init.js"></script>
+
+    = csrf_meta_tags
+    = render 'layouts/google_analytics'
+    = render 'layouts/facebook_sdk'
+    -# %link{ href: "/assets/blues_fling_four/favicon.ico", rel: "icon", type: "image/x-icon" }
+  %body.homepage
+    = yield

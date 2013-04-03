@@ -1,0 +1,70 @@
+/ Header Wrapper
+#header-wrapper
+  .5grid-layout
+    .row
+      .12u
+        / Header
+        %header{ style: "height: 120px;" }
+
+        / Banner
+        #banner
+          %h2
+            %strong Coming soon in 2013:
+            %br/
+            A weekend of spectacular
+            %br/
+            Blues Dancing in Vancouver, BC.
+
+/ Main Wrapper
+#main-wrapper
+  .main-wrapper-style1
+    .inner
+      / Feature 2
+      %section.5grid-layout.box-feature2
+        .row
+          .6u
+            %section.pad-right
+              %header.major
+                %h2 We can't tell you anything yet
+                %span.byline But trust us, you're going to love it.
+
+          .6u
+            %section.pad-left
+              .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true" }
+
+/ Footer Wrapper
+#footer-wrapper
+  %footer#footer.5grid-layout
+    .row
+      .6u
+        / About
+        %section
+          %h2
+            %strong Blues Fling
+          %p
+            %strong Blues Fling
+            is brought to you by Karen Jang, Devon Cooke and Martin Knowles.
+          %p
+            They are being aided by a small army of volunteers including Abigail Feresten, Barney Lee, Chris Harris, Diane Garceau, Ioana Bercea, Julia Skoczylas, Liam Helmer, Maxim Stykow, Morgan Grubb, Oana Sandu and Valerie Stride.
+      .6u
+        / Contact
+        %section
+          %h2 Get in touch
+          .5grid
+            .row
+              .6u
+                %dl.contact
+                  %dt Facebook
+                  %dd
+                    %a{:href => "https://www.facebook.com/BluesFling", target: "_blank"} facebook.com/BluesFling
+                  %dt WWW
+                  %dd
+                    %a{:href => "http://www.bluesfling.ca", target: "_blank"} bluesfling.ca
+                  %dt Email
+                  %dd
+                    %a{:href => "mailto:info@bluesfling.ca"} info@bluesflong.ca
+    .row
+      .12u
+        #copyright
+          \© Blues Fling. All rights reserved | Design:
+          %a{:href => "http://html5up.net/"} HTML5 Up!

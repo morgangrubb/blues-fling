@@ -1,0 +1,2 @@
+class BluesFlingFourController < ApplicationController
+end
