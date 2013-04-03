@@ -2,9 +2,10 @@
 %html
   %head
     %title Blues Fling III: Get Lucky
-    = stylesheet_link_tag    "application", media: "all"
+    = stylesheet_link_tag "blues_fling_three", media: "all"
     = csrf_meta_tags
     = render 'layouts/google_analytics'
+    %link{ href: "/assets/blues_fling_three/favicon.ico", rel: "icon", type: "image/x-icon" }
   %body
     %header
       .noise
@@ -46,10 +47,10 @@
               %p
                 You can find us on Facebook at
                 = link_to "Blues Fling", 'https://www.facebook.com/BluesFling', target: '_blank'
-                or email us at 
+                or email us at
                 = succeed '.' do
                   = mail_to "info@bluesfling.ca"
               -# .fb-comments{ "data-href" => "http://www.bluesfling.ca", "data-num-posts" => "3", "data-width" => "400", "data-colorscheme" => "dark" }
 
-    = javascript_include_tag "application"
+    = javascript_include_tag "blues_fling_three"
     = yield :javascript

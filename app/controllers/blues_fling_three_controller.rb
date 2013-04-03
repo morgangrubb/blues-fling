@@ -1,6 +1,6 @@
 require 'menu_node'
 
-class HomeController < ApplicationController
+class BluesFlingThreeController < ApplicationController
 
   def registration
     # TODO: Redirect through to the registration site.
@@ -30,11 +30,11 @@ class HomeController < ApplicationController
     # menu_root itself is the root node.
     def menu_root
       @menu_root ||= MenuNode.new do |root|
-        root.add 'Home', url: root_path
-        root.add 'Schedule', url: '/schedule'
-        root.add 'Private lessons', url: '/private_lessons'
-        root.add 'Instructors', url: '/instructors'
-        root.add 'Register', url: '/registration'
+        root.add 'Home', url: url_for(action: "index")
+        root.add 'Schedule', url: url_for(action: "schedule")
+        root.add 'Private lessons', url: url_for(action: "private_lessons")
+        root.add 'Instructors', url: url_for(action: "instructors")
+        root.add 'Register', url: url_for(action: "registration")
       end
     end
     helper_method :menu_root

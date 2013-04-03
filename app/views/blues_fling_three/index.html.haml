@@ -4,20 +4,20 @@
       %h1 Everyone loves to Get Lucky!
       %p
         We're delighted to welcome
-        = link_to 'Lucky Skillen and Lessa Lamb', '/instructors'
+        = link_to 'Lucky Skillen and Lessa Lamb', action: 'instructors'
         to Vancouver for a great weekend of workshops, dancing and house(-like) parties!
       %p Lucky has been teaching since 1998 with the philosophy that play is learning and learning is fun while Lessa allows the dance to flow through her (and was introduced to Blues' sultry rythyms here in Vancouver).
       %p
         Learn more about Lucky and Lessa
         = succeed '.' do
-          = link_to "here", '/instructors'
+          = link_to "here", action: 'instructors'
 
     .inner
       %h2 Is Blues Fling for me?
       %p The classes at Blues Fling are "all levels" but are best if you have some prior dance experience. While Summer Blues Fling will have a strong blues focus, those with West Coast Swing, Salsa, Argentine Tango, or Lindy Hop experience are also very much welcome.
       %p Blues Fling is Blues focused but is also Fusion-friendly if that's your bag. With Blues Fling III we're aiming to hit the basics with a little more depth in technique than in previous flings.
       %p
-        If you're new to blues dancing, check out 
+        If you're new to blues dancing, check out
         = succeed ',' do
           = link_to "Blues in the City", "https://www.facebook.com/groups/Bluesinthecity/", target: '_blank'
         = link_to "Blues Cafe", "https://www.facebook.com/TheBluesCafe", target: '_blank'
@@ -30,7 +30,7 @@
       %h2 Private lessons
       %p
         Looking to improve your Blues dancing with a little more specific feedback?
-        = link_to "Book a private lesson", '/private_lessons'
+        = link_to "Book a private lesson", action: 'private_lessons'
         with Lucky Skillen or Lessa Lamb during the weekend.
 
     .inner
@@ -38,7 +38,7 @@
       %p
         There are limited spots for this event so avoid disappointment and
         = succeed '.' do
-          = link_to "register now", '/registration'
+          = link_to "register now", action: 'registration'
         Prices start from just $80 for an Early Bird Weekend Pass!
 
     .inner
@@ -49,16 +49,16 @@
     .carousel
       .carousel-inner
         .active.item
-          = image_tag "lucky/1.jpg", title: "Lucky Skillen"
+          = image_tag "blues_fling_three/lucky/1.jpg", title: "Lucky Skillen"
           .carousel-caption
             %p Lucky Skillen and Lessa Lamb
         -#
           .item
-            = image_tag "lucky/2.jpg", title: "Lucky Skillen"
+            = image_tag "blues_fling_three/lucky/2.jpg", title: "Lucky Skillen"
             .carousel-caption
               %p Lucky Skillen
           .item
-            = image_tag "lucky/3.jpg", title: "Lucky Skillen"
+            = image_tag "blues_fling_three/lucky/3.jpg", title: "Lucky Skillen"
             .carousel-caption
               %p Lucky Skillen
 

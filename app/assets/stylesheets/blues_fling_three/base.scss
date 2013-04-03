@@ -75,7 +75,7 @@
   body > .shade {
     min-height: 400px;
     padding-top: $gridGutterWidth;
-    background: asset-data-url('big_shadow.png') repeat-x left top;
+    background: asset-data-url('blues_fling_three/big_shadow.png') repeat-x left top;
 
     .content {
       h1, h2, h3 {
@@ -106,13 +106,13 @@
     $headerPush: 220px;
 
     .noise {
-      background: asset-url('noise.png', image) repeat left top;
+      background: asset-url('blues_fling_three/noise.png', image) repeat left top;
     }
 
     .dancers {
       margin-top: 20px;
       height: 318px;
-      background: asset-url('bf3-web.png', image) no-repeat left top;
+      background: asset-url('blues_fling_three/bf3-web.png', image) no-repeat left top;
       position: relative;
     }
 
@@ -125,7 +125,7 @@
       width: 523px;
       display: block;
       text-indent: -9999px;
-      background: asset-url('blues-fling-3.png', image) no-repeat left top;
+      background: asset-url('blues_fling_three/blues-fling-3.png', image) no-repeat left top;
     }
 
     h3 {
@@ -190,10 +190,10 @@
 
   footer {
     @include backgroundFlare($bluesflingContentBoxColour, lighten($bluesflingContentBoxColour, 15%), top);
-    
+
     &> .shade {
       padding: $gridGutterWidth 0 100px 0;
-      background: asset-data-url('big_shadow.png') repeat-x left top;
+      background: asset-data-url('blues_fling_three/big_shadow.png') repeat-x left top;
     }
 
     h4 {
@@ -258,7 +258,7 @@
       }
     }
   }
-  
+
   @media (min-width: 768px) and (max-width: 979px) {
     .home-container {
       &> .content {
