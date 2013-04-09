@@ -3,13 +3,15 @@
   .5grid-layout
     .row
       .12u
-        / Header
-        %header{ style: "height: 120px;" }
 
         / Banner
         #banner
+          %h1
+            Blues Fling
+            %strong Fusion
+
           %h2
-            %strong Coming soon in 2013:
+            %strong July 26-28, 2013
             %br/
             A weekend of spectacular
             %br/
@@ -20,17 +22,84 @@
   .main-wrapper-style1
     .inner
       / Feature 2
+      %section.5grid-layout
+        .row
+          .8u
+            %section.pad-right
+              %header.major
+                %h2 It's what you've been waiting for!
+                %span.byline Though you might just have to wait a little bit longer.
+
+              %p
+                There's going to be workshops and dances galore.
+              %p
+                Check back here for more information soon!
+
+          .4u
+            %section.pad-left
+              .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true" }
+
+  .main-wrapper-style2
+    .inner
+      / Feature 2
       %section.5grid-layout.box-feature2
         .row
           .6u
             %section.pad-right
               %header.major
-                %h2 We can't tell you anything yet
-                %span.byline But trust us, you're going to love it.
+                %h2 Ruby Red
+                %span.byline Chicago
+              = image_tag "blues_fling_four/dancers/ruby.jpg", class: "rounded"
+
+              %blockquote
+                %p
+                  I left circus training to join the world of social dance in 2000. In 2001, I saw Frankie Manning tell the story of the battle of the bands between Chick Webb and Benny Goodman and his performance of the first air-steps. It was then that I realized that Swing Dance would last me for the rest of my life. After all, Frankie was 89 at the time and still going strong! During that fateful year, I immersed myself in dance classes, at one point taking 9 dance classes a week, including ballroom, latin, swing, break-dancing and tap.
+
+                %p
+                  Through Swing dancing I was invited to an an underground blues dance party. By 2005 I was teaching and DJing at the first iterations of Friday Night Blues in San Francisco. Since then I've traveled the US and to the UK to teach, DJ and share my love of Blues and Swing with other dancers. Now based in Chicago, I help run Bluetopia, Chicago's monthly blues dance, and continue to travel to other cities to connect, collaborate and bring inspiration back to my community.
+
+                %p
+                  Not only a continual student of dance, I'm also a certified massage therapist and have studied other movement forms including Kung Fu, T'ai Chi and Iyengar Yoga.
+
+                %p
+                  Learn more about Ruby Red at
+                  = link_to "ruby-red.com", "http://dance.ruby-red.com/", target: "_blank"
 
           .6u
             %section.pad-left
-              .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true" }
+              %header.major
+                %h2 Ted Maddry
+                %span.byline San Francisco
+              = image_tag "blues_fling_four/dancers/ted.jpg", class: "rounded", title: "Learn more about Ruby Red"
+              %blockquote
+                %p
+                  Ted Maddry started teaching dance in 2007, but he’s a born teacher.  Ted runs a fun, lighthearted classroom and delights in working with first-time dancers, international instructors, and the range in between.
+                %p
+                  As a teacher, Ted has helped thousands of students change their dancing in places like Boston, D.C., Raleigh, Las Vegas, Columbia, Austin, Denver, Vancouver, Portland, St. Louis, Chicago, Seattle, and San Francisco.
+                %p
+                  In his classes, he will challenge you to develop dance technique, experiment and take risks in your dancing, while maintaining a comfortable and entertaining classroom environment. You will gain new perspectives, unique material, and sometimes you will even learn how the same methods you use to improve your dancing can also be used to improve your non-dance life.
+                %p
+                  Ted is also the Ringleader of Beyond Blues, offering weekly Blues Dance venues in Berkeley and San Francisco, workshops, and dance camps. Ted is working with a great team to spread the joy of Blues Dance around the San Francisco Bay Area.
+                %p
+                  Learn more about Ted Maddry at
+                  = link_to "tedmaddry.com", "http://tedmaddry.com/", target: "_blank", title: "Learn more about Ted Maddry"
+
+  .main-wrapper-style3
+    .inner
+      .5grid-layout
+        .row
+          .12u
+            .article
+              %header.major
+                %h2 Registration
+                %span Not yet active. Check back soon!
+
+        .row
+          .12u
+            .article
+              %header.major
+                %h2 Volunteer Opportunities
+                %span Not yet active. Check back soon!
 
 / Footer Wrapper
 #footer-wrapper

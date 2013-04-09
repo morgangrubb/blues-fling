@@ -1,6 +1,6 @@
 Bluesfling::Application.routes.draw do
 
-  match 'blues-fling-4(/:action)', controller: "blues_fling_four", action: /(index|sample)/
+  match 'blues-fling-4(/:action)', controller: "blues_fling_four", action: /(index|sample|left-sidebar|no-sidebar|right-sidebar)/
 
   match 'blues-fling-3(/:action)', controller: "blues_fling_three", action: /(instructors|schedule|private_lessons|registration|contact_us)/
 
