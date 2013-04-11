@@ -27,19 +27,43 @@
           .8u
             %section.pad-right
               %header.major
-                %h2 It's what you've been waiting for!
-                %span.byline Though you might just have to wait a little bit longer.
+                %h2 Blues and Fusion for an entire weekend
 
               %p
-                There's going to be workshops and dances galore.
+                We're delighted to invite
+                = link_to "Ruby Red and Ted Maddry", "#instructors"
+                to Vancouver for a great weekend of workshops, dancing and house(-like) parties!
+
+              %h3 Is Blues Fling Fusion for me?
+              %p The classes at Blues Fling Fusion are "all levels" but are best if you have some prior dance experience. While will have a strong blues and fusion focus, those with West Coast Swing, Salsa, Argentine Tango, or Lindy Hop experience are also very much welcome.
               %p
-                Check back here for more information soon!
+                If you're new to blues and fusion dancing, check out
+                = succeed ',' do
+                  = link_to "Blues in the City", "https://www.facebook.com/groups/Bluesinthecity/", target: '_blank'
+                = link_to "Blues Cafe", "https://www.facebook.com/TheBluesCafe", target: '_blank'
+                and
+                = link_to "Fuse", "https://www.facebook.com/pages/FUSE-Dance/193221077396143", target: '_blank'
+                (Fusion) to get your bearings; you'll find a lot of great ideas and techniques at Blues Fling Fusion to try. We'll also have a beginner class as part of our Friday night dance to get things cookin'.
+              %p If you've been dancing awhile and have been to the previous Blues Flings, you'll be able to extend what you've learned previously in both a workshop and social environment and gain deeper and broader knowledge.
+
+              %h3 Registration
+              %p
+                There are limited spots available for Blues Fling Fusion so avoid disappointment and register now! Prices start from just $80 for an Early Bird pass.
+              %p
+                = registration_link
+
+              %h3 Schedule, venues, accomodation and volunteering?
+              %p
+                We're still working out all the details but we'll update here and post on
+                %a{:href => "https://www.facebook.com/BluesFling", target: "_blank"} facebook.com/BluesFling
+                as soon as we know. Like us on Facebook to get notified straight away!
+
 
           .4u
             %section.pad-left
               .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true" }
 
-  .main-wrapper-style2
+  #instructors.main-wrapper-style2
     .inner
       / Feature 2
       %section.5grid-layout.box-feature2
@@ -92,14 +116,10 @@
             .article
               %header.major
                 %h2 Registration
-                %span Not yet active. Check back soon!
-
-        .row
-          .12u
-            .article
-              %header.major
-                %h2 Volunteer Opportunities
-                %span Not yet active. Check back soon!
+              %p
+                There are limited spots available for Blues Fling Fusion so avoid disappointment and register now! Prices start from just $80 for an Early Bird pass.
+              %p
+                = registration_link
 
 / Footer Wrapper
 #footer-wrapper

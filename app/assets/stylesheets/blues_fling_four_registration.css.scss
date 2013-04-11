@@ -1,0 +1,311 @@
+// temporary fix for compass_twitter_bootstrap
+@function e($raw-css) {
+  @return #{$raw-css}
+}
+
+@import "compass";
+
+@import "compass_twitter_bootstrap/mixins";
+
+// CSS Reset
+@import "compass_twitter_bootstrap/reset";
+
+// Core variables and mixins
+@import "compass_twitter_bootstrap/variables"; // Modify this for custom colors, font-sizes, etc
+
+// Grid system and page structure
+@import "compass_twitter_bootstrap/scaffolding";
+//@import "compass_twitter_bootstrap/grid";
+//@import "compass_twitter_bootstrap/layouts";
+
+// Base CSS
+@import "compass_twitter_bootstrap/type";
+//@import "compass_twitter_bootstrap/code";
+@import "compass_twitter_bootstrap/forms";
+//@import "compass_twitter_bootstrap/tables";
+
+// Components: common
+//@import "compass_twitter_bootstrap/sprites";
+//@import "compass_twitter_bootstrap/dropdowns";
+//@import "compass_twitter_bootstrap/wells";
+//@import "compass_twitter_bootstrap/component-animations";
+//@import "compass_twitter_bootstrap/close";
+
+// Components: Buttons & Alerts
+@import "compass_twitter_bootstrap/buttons";
+//@import "compass_twitter_bootstrap/button-groups";
+@import "compass_twitter_bootstrap/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+//@import "compass_twitter_bootstrap/navs";
+//@import "compass_twitter_bootstrap/navbar";
+//@import "compass_twitter_bootstrap/breadcrumbs";
+//@import "compass_twitter_bootstrap/pagination";
+//@import "compass_twitter_bootstrap/pager";
+
+// Components: Popovers
+//@import "compass_twitter_bootstrap/modals";
+//@import "compass_twitter_bootstrap/tooltip";
+//@import "compass_twitter_bootstrap/popovers";
+
+// Components: Misc
+//@import "compass_twitter_bootstrap/thumbnails";
+@import "compass_twitter_bootstrap/labels";
+//@import "compass_twitter_bootstrap/progress-bars";
+//@import "compass_twitter_bootstrap/accordion";
+//@import "compass_twitter_bootstrap/carousel";
+//@import "compass_twitter_bootstrap/hero-unit";
+
+// Utility classes
+@import "compass_twitter_bootstrap/utilities"; // Has to be last to override when necessary
+
+
+
+// ======================================
+// = Now load in our custom form styles =
+// ======================================
+
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,700,800);
+
+  body {
+    // Set the background image
+    // background: #fff asset-data-url("registration_background.png") repeat-x left top;
+    // padding-bottom: 50px;
+
+    font-family: 'Open Sans', sans-serif;
+    background: asset-url('blues_fling_four/bg01.jpg', image);
+  }
+
+  body > center {
+    // Reset the nasty behaviour of the center element.
+    text-align: left;
+
+    // And then make it useful
+    @include gridSystem-columns($gridGutterWidth, $gridColumnWidth, $gridRowWidth, 10);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #wrapperDiv {
+    padding-top: 0px;
+  }
+
+  #bodyTitle {
+    // Hide the text and use a background logo
+    height: 300px;
+    // margin-bottom: 30px;
+    // text-indent: -9999px;
+    text-align: center;
+    color: #fff;
+    color: rgba(255,255,255,0.75);
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 300px;
+
+
+    background: asset-url('blues_fling_four/dancers/banner.jpg', image) center center !important;
+    background-size: cover !important;
+  }
+
+  #introduction {
+    // Make it big and pretty
+    display: none;
+  }
+
+  form {
+    background: asset-url('blues_fling_four/bg01.jpg', image);
+    position: relative;
+    padding: 50px 0;
+    text-shadow: 1px 1px 0 #fff;
+    margin-bottom: 0;
+    z-index: 2;
+  }
+
+  form:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: asset-url('blues_fling_four/bg03.png', image);
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+
+  // Bring the content in from the edges.
+  .sectionWrapper, #Introduction, #viewbookingoptions {
+    margin: 0 50px;
+  }
+
+  #viewbookingoptions {
+    margin-bottom: 18px;
+  }
+
+  #bookagain {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #returntobooking,  {
+    @extend .alert;
+    @extend .alert-success;
+    @extend .alert-block;
+    margin-bottom: 0;
+  }
+
+  // Error message
+  .errorMessage {
+    @extend .alert;
+    @extend .alert-danger;
+    @extend .alert-block;
+    margin-bottom: 0;
+  }
+
+  #Addendum {
+    // margin-top: 50px;
+    // @extend .alert;
+    // @extend .alert-info;
+    // @extend .alert-block;
+    position: relative;
+    // background-color: #000;
+    background: asset-url('blues_fling_four/bg04.png', image) top left no-repeat, asset-url('blues_fling_four/bg02.jpg', image) repeat top left;
+    background-size: 100% 250px, auto;
+
+    padding: 50px;
+
+      margin-bottom: 0;
+      text-shadow: -1px -1px 0 rgba(0,0,0,1);
+      position: relative;
+      z-index: 2;
+        font-size: 1.35em;
+        color: #fff;
+
+        h3 {
+          color: #fff;
+        }
+  }
+
+  #Addendum:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+    background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+    background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+    background: -ms-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
+    z-index: 1;
+  }
+
+  .sectionWrapper {
+    margin-bottom: 20px;
+    z-index: 3;
+    position: relative;
+
+    .sectionHeaderWrapper {
+      @extend h2;
+      margin-bottom: 10px;
+    }
+
+    &> div {
+      clear: both;
+      margin-bottom: 5px;
+      padding-left: 20px;
+    }
+
+    & :first-child {
+      padding-left: 0;
+    }
+
+    .itemdescriptioncell {
+      display: inline-block;
+      min-width: 200px;
+    }
+
+    .inputcell {
+      display: inline-block;
+      min-width: 300px;
+    }
+
+    input[type="input"] {
+      height: 28px;
+      line-height: 28px;
+      margin-bottom: 2px;
+      padding: 0 5px;
+    }
+
+    input[type="submit"] {
+      @extend .btn;
+      @extend .btn-primary;
+      width: 210px;
+    }
+
+    input[type="button"] {
+      @extend .btn;
+    }
+
+    .errorText p {
+      color: $errorText;
+    }
+  }
+
+  #info_Individualevents {
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+    p {
+      @extend h4;
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+
+  // Ticket type
+  #s5552 {
+    .sectionHeaderWrapper {
+      display: none;
+    }
+  }
+  #row_p24526_TicketType {
+    padding-left: 0;
+
+    .itemdescriptioncell {
+      display: none;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+
+      li:first-child {
+        margin-bottom: 5px;
+        label {
+          font-size: 18px;
+        }
+      }
+    }
+
+    input[type="radio"] {
+      position: relative;
+      top: -2px;
+    }
+
+    label {
+      padding-left: 10px;
+      line-height: 22px;
+      display: inline-block;
+    }
+  }
+
+  // Submit button wrapper
+  #s5556 {
+    .sectionHeaderWrapper {
+      display: none;
+    }
+  }
