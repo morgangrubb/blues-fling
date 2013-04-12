@@ -15,7 +15,7 @@
             %br/
             A weekend of spectacular
             %br/
-            Blues Dancing in Vancouver, BC.
+            dancing in Vancouver, BC.
 
 / Main Wrapper
 #main-wrapper
@@ -24,7 +24,8 @@
       / Feature 2
       %section.5grid-layout
         .row
-          .8u
+          .1u &nbsp;
+          .7u
             %section.pad-right
               %header.major
                 %h2 Blues and Fusion for an entire weekend
@@ -35,7 +36,7 @@
                 to Vancouver for a great weekend of workshops, dancing and house(-like) parties!
 
               %h3 Is Blues Fling Fusion for me?
-              %p The classes at Blues Fling Fusion are "all levels" but are best if you have some prior dance experience. While will have a strong blues and fusion focus, those with West Coast Swing, Salsa, Argentine Tango, or Lindy Hop experience are also very much welcome.
+              %p The classes at Blues Fling Fusion are "all levels" but are best if you have some prior dance experience. While we will have a strong blues and fusion focus, those with West Coast Swing, Salsa, Argentine Tango, Lindy Hop or other partner dance experience are also very much welcome.
               %p
                 If you're new to blues and fusion dancing, check out
                 = succeed ',' do
@@ -52,15 +53,27 @@
               %p
                 = registration_link
 
-              %h3 Schedule, venues, accomodation and volunteering?
+              %h3 Venues
+              %p
+                Workshops will be taking place the
+                = link_to "Russian Hall", map_link("Russian Hall, 600 Campbell Ave, Vancouver, BC, Canada"), target: '_blank'
+                and we're still working out where the parties will go.
+
+              %h3 Hosting
+              %p
+                We will help people with hosting on a first-come, first-served basis. Register your availability to host or your needs on the registration form and we'll do our best to help you out.
+
+              %h3 Schedule, volunteering, everything else?
               %p
                 We're still working out all the details but we'll update here and post on
                 %a{:href => "https://www.facebook.com/BluesFling", target: "_blank"} facebook.com/BluesFling
                 as soon as we know. Like us on Facebook to get notified straight away!
 
 
-          .4u
+          .3u
             %section.pad-left
+              = image_tag "blues_fling_four/dancers/logo.png", class: "rounded", style: "width: 100%"
+
               .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true" }
 
   #instructors.main-wrapper-style2
@@ -68,7 +81,8 @@
       / Feature 2
       %section.5grid-layout.box-feature2
         .row
-          .6u
+          .1u &nbsp;
+          .5u
             %section.pad-right
               %header.major
                 %h2 Ruby Red
@@ -89,7 +103,7 @@
                   Learn more about Ruby Red at
                   = link_to "ruby-red.com", "http://dance.ruby-red.com/", target: "_blank"
 
-          .6u
+          .5u
             %section.pad-left
               %header.major
                 %h2 Ted Maddry
@@ -112,7 +126,8 @@
     .inner
       .5grid-layout
         .row
-          .12u
+          .1u &nbsp;
+          .10u
             .article
               %header.major
                 %h2 Registration
@@ -125,7 +140,8 @@
 #footer-wrapper
   %footer#footer.5grid-layout
     .row
-      .6u
+      .1u &nbsp;
+      .5u
         / About
         %section
           %h2
@@ -134,26 +150,24 @@
             %strong Blues Fling
             is brought to you by Karen Jang, Devon Cooke and Martin Knowles.
           %p
-            They are being aided by a small army of volunteers including Abigail Feresten, Barney Lee, Chris Harris, Diane Garceau, Ioana Bercea, Julia Skoczylas, Liam Helmer, Maxim Stykow, Morgan Grubb, Oana Sandu and Valerie Stride.
-      .6u
+            They are being aided by a small army of volunteers including Abigail Feresten, Barney Lee, Cathy Lau, Chris Harris, Dominic Boyer, Ioana Bercea, Julia Skoczylas, Kenneth Minchin, Kevin Pi, Morgan Grubb, Oana Sandu, Paula Maylin, Raphaella Weissgerber, Tien Le and Valerie Stride.
+      .5u
         / Contact
         %section
           %h2 Get in touch
-          .5grid
-            .row
-              .6u
-                %dl.contact
-                  %dt Facebook
-                  %dd
-                    %a{:href => "https://www.facebook.com/BluesFling", target: "_blank"} facebook.com/BluesFling
-                  %dt WWW
-                  %dd
-                    %a{:href => "http://www.bluesfling.ca", target: "_blank"} bluesfling.ca
-                  %dt Email
-                  %dd
-                    %a{:href => "mailto:info@bluesfling.ca"} info@bluesfling.ca
+          %dl.contact
+            %dt Facebook
+            %dd
+              %a{:href => "https://www.facebook.com/BluesFling", target: "_blank"} facebook.com/BluesFling
+            %dt WWW
+            %dd
+              %a{:href => "http://www.bluesfling.ca", target: "_blank"} bluesfling.ca
+            %dt Email
+            %dd
+              %a{:href => "mailto:info@bluesfling.ca"} info@bluesfling.ca
     .row
-      .12u
+      .1u &nbsp;
+      .10u
         #copyright
           \© Blues Fling. All rights reserved | Design:
           %a{:href => "http://html5up.net/"} HTML5 Up!
