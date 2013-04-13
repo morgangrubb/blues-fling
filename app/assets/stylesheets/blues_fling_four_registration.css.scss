@@ -92,7 +92,7 @@
 
   #bodyTitle {
     // Hide the text and use a background logo
-    height: 300px;
+    height: 200px;
     // margin-bottom: 30px;
     // text-indent: -9999px;
     text-align: center;
@@ -100,7 +100,7 @@
     color: rgba(255,255,255,0.75);
     font-size: 4em;
     font-weight: 800;
-    line-height: 300px;
+    line-height: 200px;
 
 
     background: asset-url('blues_fling_four/dancers/banner.jpg', image) center center !important;
@@ -286,7 +286,7 @@
       li:first-child {
         margin-bottom: 5px;
         label {
-          font-size: 18px;
+          font-size: 17px;
         }
       }
     }
@@ -307,5 +307,29 @@
   #s5556 {
     .sectionHeaderWrapper {
       display: none;
+    }
+  }
+
+  // Combo pass spacing
+  #radioGroup_TicketType {
+    margin-bottom: 50px;
+  }
+
+  #p24526_TicketType_12076_ComboPass {
+    top: 8px !important;
+  }
+  #label_p24526_TicketType_12076_ComboPass {
+    position: relative;
+    top: 10px;
+    min-width: 500px;
+    display: inline-block;
+
+    &:after {
+      content: 'All access passes to both Blues Fling Fusion and the upcoming Terminal City Blues.\ALimited availability!';
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: 11px;
+      width: 100%;
     }
   }
