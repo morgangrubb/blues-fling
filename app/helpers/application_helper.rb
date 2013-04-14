@@ -17,4 +17,8 @@ module ApplicationHelper
     "http://maps.google.com/maps?q=#{location}&hl=en"
   end
 
+  def asset_url(asset)
+    "#{request.protocol}#{request.host_with_port}#{asset_path(asset)}"
+  end
+
 end
