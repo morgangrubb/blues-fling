@@ -47,33 +47,14 @@
                 (Fusion) to get your bearings; you'll find a lot of great ideas and techniques at Blues Fling Fusion to try. We'll also have a beginner class as part of our Friday night dance to get things cookin'.
               %p If you've been dancing awhile and have been to the previous Blues Flings, you'll be able to extend what you've learned previously in both a workshop and social environment and gain deeper and broader knowledge.
 
-              %h3 Registration
               %p
                 There are limited spots available for Blues Fling Fusion so avoid disappointment and register now! Prices start from just $80 for an Early Bird pass.
               %p
                 = registration_link
-
-              %h3 Venues
               %p
-                Workshops will be taking place the
-                = link_to "Russian Hall", map_link("Russian Hall, 600 Campbell Ave, Vancouver, BC, Canada"), target: '_blank'
-                and we're still working out where the parties will go.
-
-              %h3 Hosting
-              %p
-                We will help people with hosting on a first-come, first-served basis. Register your availability to host or your needs on the registration form and we'll do our best to help you out.
-
-              %h3 Volunteering
-              %p
-                If you would like to volunteer at Blues Fling Fusion (in exchange for a discount on your ticket) please contact us at
-                %a{:href => "mailto:info@bluesfling.ca"} info@bluesfling.ca
-                and let us know when you're available.
-
-              %h3 Schedule and everything else?
-              %p
-                We're still working out all the details but we'll update here and post on
-                %a{:href => "https://www.facebook.com/BluesFling", target: "_blank"} facebook.com/BluesFling
-                as soon as we know. Like us on Facebook to get notified straight away!
+                For more information about the event including location, workshops and volunteering, check out the
+                = link_to "info section", "#more-info"
+                below.
 
 
           .3u
@@ -81,6 +62,42 @@
               = image_tag "blues_fling_four/dancers/logo.png", class: "rounded", style: "width: 100%"
 
               .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true" }
+
+        %p &nbsp;
+        .row
+          .1u &nbsp;
+          .10u
+            %header.major
+              %h2 Terminal City Blues
+        .row
+          .1u &nbsp;
+          .5u
+            %p
+              What's this?
+              %strong More dancing‽
+              That's right; coming to Vancouver on Labour Day weekend (August 30th - September 1st) is Terminal City Blues. Featuring two tracks (Intermediate and Advanced) and with a focus on
+              %strong East Coast Blues
+              you will learn to dance blues like they do on the East Coast; emphasis on traditional blues styles.
+
+            %p
+              Your instructors for this magical weekend are
+              #{link_to "Dexter Santos", "http://www.dextersantos.com/", target: "_blank"},
+              #{link_to "Heidi Fite", "http://www.blues-dance.com/aboutus/heidifite/", target: "_blank"},
+              and #{link_to "Ruth Hoffman, & Mike Grosser", "http://ruthandmike.com/", target: "_blank"}.
+
+          .5u
+            %p
+              To make the deal even sweeter we're offering
+              %strong All Access Combo Passes to Blues Fling Fusion and Terminal City Blues
+              at a discounted rate; register early to save even more with the Early Bird discount!
+            %p
+              For more information, visit
+              = link_to "terminalcityblues.com", "http://www.terminalcityblues.com/", target: "_blank"
+              or you can
+            %p
+              = registration_link
+
+
 
   #instructors.main-wrapper-style2
     .inner
@@ -93,7 +110,7 @@
               %header.major
                 %h2 Ruby Red
                 %span.byline Chicago
-              = image_tag "blues_fling_four/dancers/ruby.jpg", class: "rounded"
+              = image_tag "blues_fling_four/dancers/ruby.jpg", class: "rounded", title: "Ruby Red"
 
               %blockquote
                 %p
@@ -114,7 +131,7 @@
               %header.major
                 %h2 Ted Maddry
                 %span.byline San Francisco
-              = image_tag "blues_fling_four/dancers/ted.jpg", class: "rounded", title: "Learn more about Ruby Red"
+              = image_tag "blues_fling_four/dancers/ted.jpg", class: "rounded", title: "Ted Maddry"
               %blockquote
                 %p
                   Ted Maddry started teaching dance in 2007, but he’s a born teacher.  Ted runs a fun, lighthearted classroom and delights in working with first-time dancers, international instructors, and the range in between.
@@ -128,19 +145,48 @@
                   Learn more about Ted Maddry at
                   = link_to "tedmaddry.com", "http://tedmaddry.com/", target: "_blank", title: "Learn more about Ted Maddry"
 
-  .main-wrapper-style3
+  .main-wrapper-style3#more-info
     .inner
       .5grid-layout
         .row
           .1u &nbsp;
           .10u
-            .article
-              %header.major
-                %h2 Registration
-              %p
-                There are limited spots available for Blues Fling Fusion so avoid disappointment and register now! Prices start from just $80 for an Early Bird pass.
-              %p
-                = registration_link
+            %header.major
+              %h2 So, you've got questions?
+
+        .row
+          .1u &nbsp;
+          .5u
+            %h3 Venues
+            %p
+              Workshops will be taking place the
+              = link_to "Russian Hall", map_link("Russian Hall, 600 Campbell Ave, Vancouver, BC, Canada"), target: '_blank'
+              and we're still working out where the parties will go.
+
+            %h3 Hosting
+            %p
+              We will help people with hosting on a first-come, first-served basis. Register your availability to host or your needs on the registration form and we'll do our best to help you out.
+
+            %h3 Volunteering
+            %p
+              If you would like to volunteer at Blues Fling Fusion (in exchange for a discount on your ticket) please contact us at
+              %a{:href => "mailto:info@bluesfling.ca"} info@bluesfling.ca
+              and let us know when you're available.
+
+          .5u
+            %h3 Schedule and everything else?
+            %p
+              We're still working out all the details but we'll update here and post on
+              %a{:href => "https://www.facebook.com/BluesFling", target: "_blank"} facebook.com/BluesFling
+              as soon as we know. Like us on Facebook to get notified straight away!
+
+            %h3 Registration
+            %p
+              There are limited spots available for Blues Fling Fusion so avoid disappointment and register now! Prices start from just $80 for an Early Bird pass.
+            %p
+              = registration_link
+
+
 
 / Footer Wrapper
 #footer-wrapper

@@ -2,10 +2,12 @@
 %html
   %head
     %title Blues Fling Fusion
-    -#
-      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-      <meta name="description" content="" />
-      <meta name="keywords" content="" />
+    %meta{ name: "description", content: "Spectacular blues and fusion workshops and dances - July 26-28th in Vancouver, BC."}
+    %meta{ "http-equiv" => "content-type", content: "text/html; charset=utf-8" }
+    %meta{ property: "og:image", content: path_to_image("blues_fling_four/dancers/logo.png") }
+    %meta{ property: "og:site_name", content: "Blues Fling" }
+    %meta{ property: "og:title", content: "Blues Fling Fusion" }
+    %meta{ property: "og:description", content: "Spectacular blues and fusion workshops and dances - July 26-28th in Vancouver, BC." }
 
     = stylesheet_link_tag "blues_fling_four", media: "all"
     :plain
