@@ -1,0 +1,35 @@
+.hero-unit
+  %h1
+    Frequently Asked Questions
+
+.row
+  .span6
+    %h3 Venues
+    %p
+      Workshops will be taking place the
+      = link_to "Russian Hall", map_link("Russian Hall, 600 Campbell Ave, Vancouver, BC, Canada"), target: '_blank'
+      and we're still working out where the parties will go.
+
+    %h3 Hosting
+    %p
+      We will help people with hosting on a first-come, first-served basis. Register your availability to host or your needs on the registration form and we'll do our best to help you out.
+
+    %h3 Volunteering
+    %p
+      If you would like to volunteer at Blues Fling Fusion (in exchange for a discount on your ticket) please contact us at
+      %a{:href => "mailto:info@bluesfling.ca"} info@bluesfling.ca
+      and let us know when you're available.
+
+  .span6
+    %h3 Schedule and everything else?
+    %p
+      We're still working out all the details but we'll update here and post on
+      %a{:href => "https://www.facebook.com/BluesFling", target: "_blank"} facebook.com/BluesFling
+      as soon as we know. Like us on Facebook to get notified straight away!
+
+    %h3 Registration
+    %p
+      There are limited spots available for Blues Fling Fusion so avoid disappointment and register now! Prices start from just $80 for an Early Bird pass.
+    %p
+      %center
+        = link_to "Register now!", { action: "registration" }, class: "btn btn-large btn-primary"

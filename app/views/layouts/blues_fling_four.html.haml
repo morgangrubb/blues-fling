@@ -9,21 +9,65 @@
     %meta{ property: "og:site_name", content: "Blues Fling" }
     %meta{ property: "og:title", content: "Blues Fling Fusion" }
     %meta{ property: "og:description", content: "Spectacular blues and fusion workshops and dances - July 26-28th in Vancouver, BC." }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
 
-    = stylesheet_link_tag "blues_fling_four", media: "all"
     :plain
-      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
-      <!--[if lte IE 9]><link rel="stylesheet" href="/assets/blues_fling_four/ie9.css" /><![endif]-->
-      <!--[if lte IE 8]><link rel="stylesheet" href="/assets/blues_fling_four/ie8.css" /><![endif]-->
-      <!--[if lte IE 7]><link rel="stylesheet" href="/assets/blues_fling_four/ie7.css" /><![endif]-->
-      <script src="/assets/blues_fling_four/jquery-1.8.3.min.js"></script>
-      <script src="/assets/blues_fling_four/5grid/init.js?use=mobile,desktop,1000px&amp;mobileUI=1&amp;mobileUI.theme=none"></script>
-      <script src="/assets/blues_fling_four/jquery.dropotron-1.2.js"></script>
-      <script src="/assets/blues_fling_four/init.js"></script>
+      <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+    = stylesheet_link_tag "blues_fling_four"
 
     = csrf_meta_tags
     = render 'layouts/google_analytics'
     = render 'layouts/facebook_sdk'
-    -# %link{ href: "/assets/blues_fling_four/favicon.ico", rel: "icon", type: "image/x-icon" }
-  %body.homepage
-    = yield
+
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %form.navbar-form.pull-right
+            = link_to "Register now!", { action: "registration" }, class: "btn btn-primary"
+          %ul.nav
+            %li
+              = link_to image_tag("blues_fling_four/dancers/wordmark-small.png"), { action: "index" }, class: "brand"
+            %li.divider-vertical
+            = navbar_links
+
+    .container
+      = yield
+
+    %footer.footer
+      .container
+        .row
+          .span3
+            = image_tag "blues_fling_four/dancers/logo.png", class: "span4"
+            &nbsp;
+            %p
+              %small
+                \© Blues Fling. All rights reserved
+          .span4.offset1
+            %h2
+              %strong Blues Fling
+            %p
+              %strong Blues Fling
+              is brought to you by Karen Jang, Devon Cooke and Martin Knowles.
+            %p
+              They are being aided by a small army of volunteers including Abigail Feresten, Barney Lee, Cathy Lau, Dominic Boyer, Ioana Bercea, Julia Skoczylas, Kenneth Minchin, Kevin Pi, Morgan Grubb, Oana Sandu, Paula Maylin, Raphaella Weissgerber, Tien Le and Valerie Stride.
+
+            %h2 Get in touch
+            %dl.contact
+              %dt Facebook
+              %dd
+                %a{:href => "https://www.facebook.com/BluesFling", target: "_blank"} facebook.com/BluesFling
+              %dt WWW
+              %dd
+                %a{:href => "http://www.bluesfling.ca", target: "_blank"} bluesfling.ca
+              %dt Email
+              %dd
+                %a{:href => "mailto:info@bluesfling.ca"} info@bluesfling.ca
+
+          .span4
+            .fb-like-box{ "data-href" => "http://www.facebook.com/BluesFling", "data-show-faces" => "true", "data-stream" => "true", "data-header" => "true", "data-colorscheme" => "dark" }
+
+    =# javascript_include_tag "blues_fling_four"

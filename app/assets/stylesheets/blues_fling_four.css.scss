@@ -9,12 +9,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require blues_fling_four/5grid/core
- *= require blues_fling_four/5grid/core-desktop
- *= require blues_fling_four/5grid/core-1200px
- *= require blues_fling_four/5grid/core-noscript
- *= require blues_fling_four/style
- *= require blues_fling_four/style-desktop
- *= require blues_fling_four/custom
+ *= require blues_fling_four/bootstrap
+ *= require blues_fling_four/bootstrap_modifiers
+ *= require blues_fling_four/bootstrap_responsive
 */
 
