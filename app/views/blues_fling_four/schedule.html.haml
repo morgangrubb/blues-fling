@@ -1,6 +1,29 @@
 .hero-unit
   %h1 Schedule
 
-.alert.alert-info.alert-block
-  %h4.alert-heading Schedule is coming soon
-  %p We're still working out the details and will update this page as soon as we know.
+.row
+  .span12
+    %h2 Saturday, July 27th
+    %table.table.table-striped
+      %tr
+        %td{ style: "width: 30%" } 12:00 &mdash; 18:00
+        %td Workshops
+        %td Russian Hall
+      %tr
+        %td{ style: "width: 30%" } 21:00 &mdash; 02:00
+        %td Dance
+        %td
+
+    %h2 Sunday, July 28th
+    %table.table.table-striped
+      %tr
+        %td{ style: "width: 30%" } 12:00 &mdash; 18:00
+        %td Workshops
+        %td Russian Hall
+      %tr
+        %td{ style: "width: 30%" } 21:00 &mdash; 02:00
+        %td Dance
+        %td
+
+  .span6
+    = render 'venue_russian_hall'
