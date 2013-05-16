@@ -1,6 +1,6 @@
 Bluesfling::Application.routes.draw do
 
-  match 'blues-fling-4(/:action)', controller: "blues_fling_four", action: /(instructors|schedule|private_lessons|registration|contact_us|faq)/
+  match 'blues-fling-4(/:action)', controller: "blues_fling_four", action: /(instructors|schedule|private_lessons|registration|contact_us|faq|venues|volunteer)/
 
   match 'blues-fling-3(/:action)', controller: "blues_fling_three", action: /(instructors|schedule|private_lessons|registration|contact_us)/
 
@@ -13,6 +13,8 @@ Bluesfling::Application.routes.draw do
   get 'registration'    => "#{current_event}#registration"
   get 'faq'             => "#{current_event}#faq"
   get 'contact_us'      => "#{current_event}#contact_us"
+  get 'venues'          => "#{current_event}#venues"
+  get 'volunteer'       => "#{current_event}#volunteer"
 
   root :to => "#{current_event}#index"
 end

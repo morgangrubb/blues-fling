@@ -2,28 +2,33 @@
   %h1 Schedule
 
 .row
-  .span12
-    %h2 Saturday, July 27th
+  .span4
+    %p
+      Dance all day, dance all night — Blues fling offers four hours of workshops each day, and dancing 'til you drop each night.
+    %p
+      Each day of workshops will feature both Blues and Fusion classes that can take your dancing to the next level — Ted and Ruby are both AWESOME solo dancers, and we know you'll want to learn their moves.
+    %p
+      We run our dances like parties — with food, themes, and lots and lots of dancing.  Dress up, have fun, and bring your best — we'll have awesome DJs to bring you through the night.
+
+  .span8
+    %h3 Saturday, July 27th
     %table.table.table-striped
       %tr
         %td{ style: "width: 30%" } 12:00 &mdash; 18:00
         %td Workshops
-        %td Russian Hall
+        %td= link_to "Russian Hall", action: "venues", controller: "blues_fling_four", anchor: "russian_hall"
       %tr
         %td{ style: "width: 30%" } 21:00 &mdash; 02:00
         %td Dance
-        %td
+        %td TBA
 
-    %h2 Sunday, July 28th
+    %h3 Sunday, July 28th
     %table.table.table-striped
       %tr
         %td{ style: "width: 30%" } 12:00 &mdash; 18:00
         %td Workshops
-        %td Russian Hall
+        %td= link_to "Russian Hall", action: "venues", controller: "blues_fling_four", anchor: "russian_hall"
       %tr
         %td{ style: "width: 30%" } 21:00 &mdash; 02:00
         %td Dance
-        %td
-
-  .span6
-    = render 'venue_russian_hall'
+        %td TBA

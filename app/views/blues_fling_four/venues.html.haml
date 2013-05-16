@@ -1,0 +1,31 @@
+.hero-unit
+  %h1 Venues
+
+.row#russian_hall
+  .span12
+    %h2 Workshops
+    %ul.thumbnails
+      %li.span6
+        .thumbnail
+          = map_image "Russian Hall, 600 Campbell Ave, Vancouver, BC", size: "600x400"
+          .caption
+            %h3
+              = link_to "Russian Hall", map_link("Russian Hall, 600 Campbell Ave, Vancouver, BC, Canada"), target: '_blank'
+            %p
+              600 Campbell Ave
+              %br/
+              Vancouver, BC
+              %br/
+              Canada
+
+      %li.span6
+        .thumbnail
+          = image_tag "blues_fling_four/dancers/russian_hall.jpg"
+
+  .span12
+    &nbsp;
+
+.row
+  .span12
+    %h2 Dances
+    %p Venue for dances will be announced shortly.

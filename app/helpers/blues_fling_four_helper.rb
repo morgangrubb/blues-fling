@@ -13,6 +13,7 @@ module BluesFlingFourHelper
       ["Instructors",               { action: "instructors" }.reverse_merge(base_url_options)],
       ["Schedule",                  { action: "schedule" }.reverse_merge(base_url_options)],
       ["Pricing and Registration",  { action: "registration" }.reverse_merge(base_url_options)],
+      ["Volunteer",                 { action: "volunteer" }.reverse_merge(base_url_options)],
       ["FAQ",                       { action: "faq" }.reverse_merge(base_url_options)]
     ]
 
