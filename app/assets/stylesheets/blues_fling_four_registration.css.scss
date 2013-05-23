@@ -312,7 +312,7 @@
 
   // Combo pass spacing
   #radioGroup_TicketType {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   #p24526_TicketType_12076_ComboPass {
@@ -331,5 +331,19 @@
       top: 22px;
       left: 11px;
       width: 100%;
+    }
+  }
+
+  // T-Shirt styles
+  #row_p25198_Tshirt {
+    padding-left: 0;
+
+    .itemdescriptioncell {
+      width: 70px;
+      min-width: 0;
+    }
+
+    &>span>p {
+      font-size: 130%;
     }
   }
