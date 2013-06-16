@@ -1,31 +1,50 @@
 .hero-unit
   %h1 Venues
 
+%h2 Workshops
 .row#russian_hall
-  .span12
-    %h2 Workshops
-    %ul.thumbnails
-      %li.span6
-        .thumbnail
-          = map_image "Russian Hall, 600 Campbell Ave, Vancouver, BC", size: "600x400"
-          .caption
-            %h3
-              = link_to "Russian Hall", map_link("Russian Hall, 600 Campbell Ave, Vancouver, BC, Canada"), target: '_blank'
-            %p
-              600 Campbell Ave
-              %br/
-              Vancouver, BC
-              %br/
-              Canada
+  .span6
+    :plain
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Russian+Hall&amp;aq=&amp;sll=49.278417,-123.084691&amp;sspn=0.009043,0.01972&amp;t=m&amp;ie=UTF8&amp;hq=Russian+Hall&amp;hnear=&amp;cid=12599577414497173462&amp;ll=49.278781,-123.084297&amp;spn=0.009799,0.018239&amp;z=15&amp;output=embed"></iframe><br />
+      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Russian+Hall&amp;aq=&amp;sll=49.278417,-123.084691&amp;sspn=0.009043,0.01972&amp;t=m&amp;ie=UTF8&amp;hq=Russian+Hall&amp;hnear=&amp;cid=12599577414497173462&amp;ll=49.278781,-123.084297&amp;spn=0.009799,0.018239&amp;z=15">View Larger Map</a>
+  .span6
+    %h3
+      = link_to "Russian Hall", "https://plus.google.com/111766907928724123077/about?gl=ca&hl=en", target: '_blank'
+    %p
+      600 Campbell Ave
+      %br/
+      Vancouver, BC
+      %br/
+      Canada
 
-      %li.span6
-        .thumbnail
-          = image_tag "blues_fling_four/dancers/russian_hall.jpg"
+&nbsp;
 
-  .span12
-    &nbsp;
+%h2 Dances
+.row#academy_duello
+  .span6
+    :plain
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;q=Academie+Duello,+412+W+Hastings+St,+Vancouver,+Greater+Vancouver,+British+Columbia+V6B+1L1,+Canada&amp;sll=49.257735,-123.123904&amp;sspn=0.144751,0.344009&amp;t=m&amp;ie=UTF8&amp;geocode=FZYB8AId3Xep-A&amp;split=0&amp;hq=&amp;hnear=Academie+Duello,+412+W+Hastings+St,+Vancouver,+British+Columbia+V6B+1L1,+Canada&amp;ll=49.283484,-123.11142&amp;spn=0.013997,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;q=Academie+Duello,+412+W+Hastings+St,+Vancouver,+Greater+Vancouver,+British+Columbia+V6B+1L1,+Canada&amp;sll=49.257735,-123.123904&amp;sspn=0.144751,0.344009&amp;t=m&amp;ie=UTF8&amp;geocode=FZYB8AId3Xep-A&amp;split=0&amp;hq=&amp;hnear=Academie+Duello,+412+W+Hastings+St,+Vancouver,+British+Columbia+V6B+1L1,+Canada&amp;ll=49.283484,-123.11142&amp;spn=0.013997,0.036478&amp;z=14&amp;iwloc=A">View Larger Map</a>
+  .span6
+    %h3
+      = link_to "Academie Duello", "http://www.academieduello.com/", target: '_blank'
+    %p
+      412 W Hastings St
+      %br/
+      Vancouver, BC
+      %br/
+      Canada
 
-.row
-  .span12
-    %h2 Dances
-    %p Venue for dances will be announced shortly.
+&nbsp;
+.row#one_thousand_rivers
+  .span6
+    :plain
+      <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=One+Thousand+Rivers,+Vancouver,+BC,+Canada&amp;aq=0&amp;oq=one+thousand+rivers&amp;sll=49.264815,-123.058514&amp;sspn=0.072365,0.172005&amp;ie=UTF8&amp;hq=One+Thousand+Rivers,&amp;hnear=Vancouver,+Greater+Vancouver,+British+Columbia,+Canada&amp;t=m&amp;ll=49.267345,-123.102884&amp;spn=0.013462,0.024294&amp;output=embed"></iframe><br /><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=One+Thousand+Rivers,+Vancouver,+BC,+Canada&amp;aq=0&amp;oq=one+thousand+rivers&amp;sll=49.264815,-123.058514&amp;sspn=0.072365,0.172005&amp;ie=UTF8&amp;hq=One+Thousand+Rivers,&amp;hnear=Vancouver,+Greater+Vancouver,+British+Columbia,+Canada&amp;t=m&amp;ll=49.267345,-123.102884&amp;spn=0.013462,0.024294">View Larger Map</a>
+  .span6
+    %h3
+      = link_to "1000 Rivers Academy", "http://onethousandrivers.com/", target: '_blank'
+    %p
+      54 East 4th Ave
+      %br/
+      Vancouver, BC
+      %br/
+      Canada
