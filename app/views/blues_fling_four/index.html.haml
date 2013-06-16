@@ -64,34 +64,10 @@
           = link_to "Learn more about Ted Maddry and Ruby Red", { action: "instructors" }
 
 .row
-  .span4
-    %h2 Terminal City Blues
-    %p
-      What's this?
-      %strong More dancing‽
-      That's right; coming to Vancouver on Labour Day weekend (August 30th - September 1st) is Terminal City Blues. Featuring two tracks (Intermediate and Advanced) and with a focus on
-      %strong East Coast Blues
-      you will learn to dance blues like they do on the East Coast; emphasis on traditional blues styles.
+  .span3.offset2
+    = image_tag asset_url("blues_fling_four/dancers/tshirt.jpg"), class: "img-rounded"
 
-    %p
-      Your instructors for this magical weekend are
-      #{link_to "Dexter Santos", "http://www.dextersantos.com/", target: "_blank"},
-      #{link_to "Heidi Fite", "http://www.blues-dance.com/aboutus/heidifite/", target: "_blank"},
-      and #{link_to "Ruth Hoffman, & Mike Grosser", "http://ruthandmike.com/", target: "_blank"}.
-
-    %p
-      To make the deal even sweeter we're offering
-      %strong All Access Combo Passes to Blues Fling Fusion and Terminal City Blues
-      at a discounted rate; register early to save even more with the Early Bird discount!
-    %p
-      For more information, visit
-      = link_to "terminalcityblues.com", "http://www.terminalcityblues.com/", target: "_blank"
-      or you can
-    %p
-      %center
-        = link_to "Register now!", { action: "registration" }, class: "btn btn-primary btn-large"
-
-  .span4
+  .span5
     %h2 Blues Fling now has T-shirts!
     %p
       Like to show off how many dance events you've gone to?
@@ -107,6 +83,3 @@
 
     %p
       Already registered, afraid you've missed out? You can modify your registration to now include the shirt!
-
-  .span4
-    = image_tag asset_url("blues_fling_four/dancers/tshirt.jpg"), class: "img-rounded"

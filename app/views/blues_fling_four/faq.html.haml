@@ -3,25 +3,27 @@
     Frequently Asked Questions
 
 .row
-  .span6
-    %h3 Venues
+  .span8.offset2
+    %h3 Where are the dances being held?
     %p
-      Workshops will be taking place at the
-      = link_to "Russian Hall", map_link("Russian Hall, 600 Campbell Ave, Vancouver, BC, Canada"), target: '_blank'
+      Check the
+      = link_to "Schedule", action: "schedule"
+      to see when and where every dance is taking place.
 
-    %h3 Hosting
+    %h3 Is there hosting available?
     %p
       We will help people with hosting on a first-come, first-served basis. Register your availability to host or your needs on the registration form and we'll do our best to help you out.
 
-    %h3 Volunteering
+    %h3 Are there volunteering opportunities?
     %p
-      Discounts are available on your Blues Fling Fusion pass if you help us out with some volunteer work at a rate of
-      %strong $20 off per two hour shift.
-      Contact
-      = link_to "volunteer@bluesfling.ca", "mailto:volunteer@bluesfling.ca"
-      and let us know when you're available.
+      Yes! See the
+      = link_to "Volunteer", action: "volunteer"
+      page for information on volunteering.
 
-  .span6
+    %h3 What happened to Terminal City Blues?
+    %p
+      Unfortunately Terminal City Blues is no longer able to go ahead. If you have already purchased the combo pass we will be in touch with you shortly to arrange a refund.
+
     %h3 Workshop schedule
     %p
       We're still working out all the details but we'll update here and post on
@@ -34,7 +36,7 @@
       = link_to "info@bluesfling.ca", "mailto:info@bluesfling.ca"
 
     .row
-      .span3
+      .span4
         %h3 T-shirts
         %p
           Like to show off how many dance events you've gone to?
@@ -44,7 +46,7 @@
         %p
           Already registered, afraid you've missed out? You can modify your registration to now include the shirt!
           A limited quantity will be available at the event, but to ensure the right size, please pre-order.
-      .span3
+      .span3.offset1
         = image_tag asset_url("blues_fling_four/dancers/tshirt.jpg"), class: "img-rounded"
 
 .row
