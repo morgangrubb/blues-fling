@@ -10,6 +10,7 @@ module BluesFlingFourHelper
 
     links = [
       # ["Home",                      { action: "index" }.reverse_merge(base_url_options)],
+      ["Blues & Fusion",        { action: "about" }.reverse_merge(base_url_options)],
       ["Instructors",               { action: "instructors" }.reverse_merge(base_url_options)],
       ["Schedule",                  { action: "schedule" }.reverse_merge(base_url_options)],
       ["Pricing and Registration",  { action: "registration" }.reverse_merge(base_url_options)],
