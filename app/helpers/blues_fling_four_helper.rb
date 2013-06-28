@@ -32,4 +32,9 @@ module BluesFlingFourHelper
     parsed_links.join(content_tag(:li, "", class: "divider-vertical")).html_safe
   end
 
+  def class_block(id, title, &block)
+    description = capture(&block)
+    render "class_block", id: id, title: title, description: description
+  end
+
 end

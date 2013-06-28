@@ -1,0 +1,47 @@
+.hero-unit
+  %h1 Party themes
+
+%p
+  As always are parties have themes and we encourage you to look the part and dress up! Don't worry; we will still dance with you if you don't!
+
+.row
+  .span4
+    %h3
+      Friday
+    = image_tag asset_url("blues_fling_four/dancers/party-friday.jpg"), class: "img-rounded", title: "Copyright Alvin Ailey American Dance Theater - http://www.alvinailey.org/"
+    %h4
+      Blues Gotcha Down?
+    %p
+      Never!  Stand up and use your blues to celebrate good times, good friends, and great dancing! Kick off your awesome weekend by going down south to the heart of blues, soul and gospel! We're keeping things bluesy downtown at the usual Friday blues venue: Acadmey Duello.  Think hot humid nights, clothing made of flowing cotton, and true Southern hospitality.  Blues may have come from the down and out, but it's all about being alive and dancing!
+    %p
+      Costume ideas: Plantation: simple, loose, flowing, earthy tones. Comfy natural materials. A little hippie, a little poor, all spirit!
+
+  .span4
+    %h3
+      Saturday
+    = image_tag asset_url("blues_fling_four/dancers/party-saturday.jpg"), class: "img-rounded"
+    %h4
+      Keep Calm & Dance On
+    %p
+      Did you know we are running the same weekend as the Celebration of Light fireworks?  The UK is strutting their pyrotechnic stuff and in their honour we are throwing a WWII send off for them! Wear your military dress uniform, put on a poppy, keep calm while the fireworks explode overhead and then dance on through the night!
+    %p
+      Costume ideas: Military and Civlian 1940s
+    %p
+      Saturday night also features fireworks from
+      = link_to "hondacelebrationoflight.com", "http://hondacelebrationoflight.com/", target: "_blank"
+
+  .span4
+    %h3
+      Sunday
+    = image_tag asset_url("blues_fling_four/dancers/party-sunday.jpg"), class: "img-rounded", title: "Copyright Threadless - http://www.threadless.com/product/917/I_Listen_to_Bands_That_Don_t_Even_Exist_Yet"
+    %h4
+      You Can't Stop the Beat
+    %p
+      This is a blues fusion weekend and one of the best parts of fusion is all the different music you get to dance to!  So tonight is to celebrate all the music we love.  Let's see it!  Time to show off your band, album, concert shirts!!  Do you rock?  Do you roll?  Is it someone we've never heard of?  What are we missing and should we be dancing to?
+    %p
+      Costume ideas: Shirts with band, albums or anything music related
+%hr/
+.row
+  .span4.offset8{ style: "text-align: right;" }
+    = link_to "&laquo; Return to schedule".html_safe, { action: "schedule" }, class: "btn"
+

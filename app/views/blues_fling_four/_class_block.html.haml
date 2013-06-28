@@ -1,0 +1,7 @@
+.row{ id: id }
+  .span4{ style: "text-align: right;" }
+    = link_to "&laquo; Return to schedule".html_safe, { action: "schedule" }, class: "btn", style: "margin-top: 15px"
+  .span8
+    %h3= title
+    = description
+

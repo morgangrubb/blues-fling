@@ -11,75 +11,105 @@
       We run our dances like parties — with food, themes, and lots and lots of dancing.  Dress up, have fun, and bring your best — we'll have awesome DJs to bring you through the night.
 
   .span8
-    %h3 Friday, July 26th
+    - link_to_academie_duello = link_to "Academie Duello", action: "venues", controller: "blues_fling_four", anchor: "academy_duello"
+    - link_to_russian_hall = link_to "Russian Hall", action: "venues", controller: "blues_fling_four", anchor: "russian_hall"
+    - link_to_one_thousand_rivers = link_to "1000 Rivers Academy", action: "venues", controller: "blues_fling_four", anchor: "one_thousand_rivers"
+
+    %h3 Friday, July 26th &mdash; Evening
+    %h4
+      Venue:
+      = link_to_academie_duello
     %table.table.table-striped
       %tr
-        %td{ style: "width: 30%" } 22:00 &mdash; 02:00
-        %td{ style: "width: 30%" } Dance
-        %td= link_to "Academie Duello", action: "venues", controller: "blues_fling_four", anchor: "academy_duello"
+        %td{ style: "width: 25%" } 22:15 &mdash; 23:00
+        %td= link_to "Fundamentals drop-in", action: "classes", anchor: ""
+      %tr
+        %td 23:00 &mdash; 02:00
+        %td= link_to "Blues Gotcha Down?", action: "dances"
 
-    %h3 Saturday, July 27th
+    %hr/
+
+    %h3 Saturday, July 27th &mdash; Day
+    %h4
+      Venue:
+      = link_to_russian_hall
     %table.table.table-striped
       %tr
-        %td{ style: "width: 30%" } 12:00 &mdash; 18:00
-        %td{ style: "width: 30%" } Workshops
-        %td= link_to "Russian Hall", action: "venues", controller: "blues_fling_four", anchor: "russian_hall"
+        %td{ style: "width: 25%" } 11:00 &mdash; 12:00
+        %td Setup and registration
       %tr
-        %td 21:00 &mdash; 02:00
-        %td Dance
-        %td= link_to "Academie Duello", action: "venues", controller: "blues_fling_four", anchor: "academy_duello"
+        %td 12:00 &mdash; 13:00
+        %td= link_to "Solo movement, riffing, learning with your eyes", action: "classes", anchor: ""
+      %tr
+        %td 13:15 &mdash; 14:15
+        %td= link_to "Partnership dynamics - modes of connection + rhythms", action: "classes", anchor: ""
+      %tr
+        %td 15:30 &mdash; 16:30
+        %td= link_to "Turning technique 1", action: "classes", anchor: "c4"
+      %tr
+        %td 16:45 &mdash; 17:45
+        %td= link_to "Blues Styles (how to dance and synthesize music and rhythms)", action: "classes", anchor: ""
 
-    %h3 Sunday, July 28th
+    %h3 Saturday, July 27th &mdash; Master Class
+    %h4
+      Venue:
+      = link_to_russian_hall
+    %h5
+      Note: This class is not included in the Weekend or Single day passes. See the
+      = link_to "registration", action: "registration"
+      page for more details.
     %table.table.table-striped
       %tr
-        %td{ style: "width: 30%" } 12:00 &mdash; 18:00
-        %td{ style: "width: 30%" } Workshops
-        %td= link_to "Russian Hall", action: "venues", controller: "blues_fling_four", anchor: "russian_hall"
+        %td{ style: "width: 25%" } 18:00 &mdash; 19:00
+        %td= link_to "How to dance to electronic music", action: "classes", anchor: "c2"
+
+    %h3 Saturday, July 27th &mdash; Evening
+    %h4
+      Venue:
+      = link_to_academie_duello
+    %table.table.table-striped
       %tr
-        %td 21:00 &mdash; 03:00
-        %td Dance
-        %td= link_to "1000 Rivers Academy", action: "venues", controller: "blues_fling_four", anchor: "one_thousand_rivers"
+        %td{ style: "width: 25%" } 21:00 &mdash; 02:00
+        %td= link_to "Keep Calm & Dance On", action: "dances"
 
-.row
-  .span12
-    %h2 Party themes
-    %p
-      As always are parties have themes and we encourage you to look the part and dress up! Don't worry; we will still dance with you if you don't!
+    %hr/
 
-.row
-  .span4
-    %h3
-      Friday
-    = image_tag asset_url("blues_fling_four/dancers/party-friday.jpg"), class: "img-rounded", title: "Copyright Alvin Ailey American Dance Theater - http://www.alvinailey.org/"
+    %h3 Sunday, July 28th &mdash; Day
     %h4
-      Blues Gotcha Down?
-    %p
-      Never!  Stand up and use your blues to celebrate good times, good friends, and great dancing! Kick off your awesome weekend by going down south to the heart of blues, soul and gospel! We're keeping things bluesy downtown at the usual Friday blues venue: Acadmey Duello.  Think hot humid nights, clothing made of flowing cotton, and true Southern hospitality.  Blues may have come from the down and out, but it's all about being alive and dancing!
-    %p
-      Costume ideas: Plantation: simple, loose, flowing, earthy tones. Comfy natural materials. A little hippie, a little poor, all spirit!
+      Venue:
+      = link_to_russian_hall
+    %table.table.table-striped
+      %tr
+        %td{ style: "width: 25%" } 12:00 &mdash; 13:00
+        %td= link_to "Turning technique 2", action: "classes", anchor: "c5"
+      %tr
+        %td 13:15 &mdash; 14:15
+        %td= link_to "Critical timing + kickass moves", action: "classes", anchor: ""
+      %tr
+        %td 15:30 &mdash; 16:30
+        %td= link_to "Fusion cliff notes", action: "classes", anchor: "c3"
+      %tr
+        %td 16:45 &mdash; 17:45
+        %td= link_to "Relax, don't panic, breathe", action: "classes", anchor: ""
 
-  .span4
-    %h3
-      Saturday
-    = image_tag asset_url("blues_fling_four/dancers/party-saturday.jpg"), class: "img-rounded"
+    %h3 Sunday, July 28th &mdash; Master Class
     %h4
-      Keep Calm & Dance On
-    %p
-      Did you know we are running the same weekend as the Celebration of Light fireworks?  The UK is strutting their pyrotechnic stuff and in their honour we are throwing a WWII send off for them! Wear your military dress uniform, put on a poppy, keep calm while the fireworks explode overhead and then dance on through the night!
-    %p
-      Costume ideas: Military and Civlian 1940s
-    %p
-      Saturday night also features fireworks from
-      = link_to "hondacelebrationoflight.com", "http://hondacelebrationoflight.com/", target: "_blank"
+      Venue:
+      = link_to_russian_hall
+    %h5
+      Note: This class is not included in the Weekend or Single day passes. See the
+      = link_to "registration", action: "registration"
+      page for more details.
+    %table.table.table-striped
+      %tr
+        %td{ style: "width: 25%" } 18:00 &mdash; 19:00
+        %td= link_to "A public private lesson", action: "classes", anchor: ""
 
-  .span4
-    %h3
-      Sunday
-    = image_tag asset_url("blues_fling_four/dancers/party-sunday.jpg"), class: "img-rounded", title: "Copyright Threadless - http://www.threadless.com/product/917/I_Listen_to_Bands_That_Don_t_Even_Exist_Yet"
+    %h3 Sunday, July 28th &mdash; Evening
     %h4
-      You Can't Stop the Beat
-    %p
-      This is a blues fusion weekend and one of the best parts of fusion is all the different music you get to dance to!  So tonight is to celebrate all the music we love.  Let's see it!  Time to show off your band, album, concert shirts!!  Do you rock?  Do you roll?  Is it someone we've never heard of?  What are we missing and should we be dancing to?
-    %p
-      Costume ideas: Shirts with band, albums or anything music related
-
+      Venue:
+      = link_to_one_thousand_rivers
+    %table.table.table-striped
+      %tr
+        %td{ style: "width: 25%" } 21:00 &mdash; 03:00
+        %td= link_to "You Can't Stop the Beat", action: "dances"
