@@ -45,15 +45,8 @@
 
   .span6
     .row
-      .span3
-        = image_tag "blues_fling_four/dancers/ted.jpg", title: "Ted Maddry", class: "img-rounded"
-        %h4
-          Ted Maddry
-      .span3
-        = image_tag "blues_fling_four/dancers/ruby.jpg", title: "Ruby Red", class: "img-rounded"
-        %h4
-          Ruby Red
       .span6
+        = link_to image_tag("blues_fling_four/dancers/4.jpg", title: "Ted Maddry", class: "img-rounded"), { action: "instructors" }
         %p
           = link_to "Learn more about Ted Maddry and Ruby Red", { action: "instructors" }
 
