@@ -2,10 +2,14 @@
   %h1 Instructors
 
 .row
-  .span5
-    = image_tag "blues_fling_four/dancers/ted.jpg", title: "Ted Maddry"
+  .span4
+    = image_tag asset_url("blues_fling_four/dancers/3.jpg"), class: "img-rounded", style: "margin-bottom: 10px"
+    =# image_tag asset_url("blues_fling_four/dancers/1.jpg"), class: "img-rounded", style: "margin-bottom: 10px"
+    = image_tag asset_url("blues_fling_four/dancers/2.jpg"), class: "img-rounded", style: "margin-bottom: 10px"
+    = image_tag asset_url("blues_fling_four/dancers/5.jpg"), class: "img-rounded", style: "margin-bottom: 10px"
+    = image_tag asset_url("blues_fling_four/dancers/4.jpg"), class: "img-rounded", style: "margin-bottom: 10px"
 
-  .span7
+  .span8
     %h2
       Ted Maddry
       %small &mdash; San Francisco
@@ -23,10 +27,9 @@
       Learn more about Ted Maddry at
       = link_to "tedmaddry.com", "http://tedmaddry.com/", target: "_blank", title: "Learn more about Ted Maddry"
 
-&nbsp;
+    &nbsp;
 
-.row
-  .span7
+  .span8
     %h2
       Ruby Red
       %small &mdash; Chicago
@@ -44,9 +47,6 @@
     %p
       Learn more about Ruby Red at
       = link_to "ruby-red.com", "http://dance.ruby-red.com/", target: "_blank"
-
-  .span5
-    = image_tag "blues_fling_four/dancers/ruby.jpg", title: "Ruby Red"
 
 &nbsp;
 
