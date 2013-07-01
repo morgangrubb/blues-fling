@@ -11,10 +11,6 @@
       We run our dances like parties — with food, themes, and lots and lots of dancing.  Dress up, have fun, and bring your best — we'll have awesome DJs to bring you through the night.
 
   .span8
-    - link_to_academie_duello = link_to "Academie Duello", action: "venues", controller: "blues_fling_four", anchor: "academy_duello"
-    - link_to_russian_hall = link_to "Russian Hall", action: "venues", controller: "blues_fling_four", anchor: "russian_hall"
-    - link_to_one_thousand_rivers = link_to "1000 Rivers Academy", action: "venues", controller: "blues_fling_four", anchor: "one_thousand_rivers"
-
     %h3 Friday, July 26th &mdash; Evening
     %h4
       Venue:
@@ -25,7 +21,7 @@
         %td= link_to "Fundamentals drop-in", action: "classes", anchor: ""
       %tr
         %td 23:00 &mdash; 02:00
-        %td= link_to "Blues Gotcha Down?", action: "dances"
+        %td= link_to "Dance Party: Blues Gotcha Down?", action: "dances"
 
     %hr/
 
@@ -34,6 +30,9 @@
       Venue:
       = link_to_russian_hall
     %table.table.table-striped
+      %tr
+        %td 10:00 &mdash; 11:30
+        %td Private lessons
       %tr
         %td{ style: "width: 25%" } 10:30 &mdash; 11:30
         %td Setup and registration
@@ -52,6 +51,9 @@
       %tr
         %td 17:15 &mdash; 18:15
         %td= link_to "How to dance to electronic music", action: "classes", anchor: "saturday"
+      %tr
+        %td 18:30 &mdash; 20:30
+        %td Private lessons
 
     %h3 Saturday, July 27th &mdash; Evening
     %h4
@@ -60,7 +62,7 @@
     %table.table.table-striped
       %tr
         %td{ style: "width: 25%" } 21:00 &mdash; 02:00
-        %td= link_to "Keep Calm & Dance On", action: "dances"
+        %td= link_to "Dance Party: Keep Calm & Dance On", action: "dances"
 
     %hr/
 
@@ -69,6 +71,9 @@
       Venue:
       = link_to_russian_hall
     %table.table.table-striped
+      %tr
+        %td 10:00 &mdash; 12:00
+        %td Private lessons
       %tr
         %td{ style: "width: 25%" } 12:00 &mdash; 13:00
         %td= link_to "Turning technique 2", action: "classes", anchor: "sunday"
@@ -81,6 +86,9 @@
       %tr
         %td 16:45 &mdash; 17:45
         %td= link_to "Relax, don't panic, breathe", action: "classes", anchor: "sunday"
+      %tr
+        %td 19:15 &mdash; 20:15
+        %td Private lessons
 
     %h3 Sunday, July 28th &mdash; Master Class
     %h4
@@ -93,7 +101,13 @@
     %table.table.table-striped
       %tr
         %td{ style: "width: 25%" } 18:00 &mdash; 19:00
-        %td= link_to "A public private lesson", action: "classes", anchor: ""
+        %td
+          %p
+            = link_to "Master Class:  Public Private Lesson", action: "classes", anchor: "sunday"
+            &mdash;
+            = link_to "Register now", { action: "registration" }
+          %p
+            Get your dancing critiqued directly by Ted & Ruby.  Only 10 critique tickets are available.  Observer tickets are unlimited.
 
     %h3 Sunday, July 28th &mdash; Evening
     %h4
@@ -102,4 +116,10 @@
     %table.table.table-striped
       %tr
         %td{ style: "width: 25%" } 21:00 &mdash; 03:00
-        %td= link_to "You Can't Stop the Beat", action: "dances"
+        %td= link_to "Dance Party: You Can't Stop the Beat", action: "dances"
+
+    %h3 Monday, July 29th
+    %table.table.table-striped
+      %tr
+        %td{ style: "width: 25%" } By appointment
+        %td Private lessons
